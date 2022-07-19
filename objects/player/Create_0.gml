@@ -16,8 +16,6 @@
 	TopSpeed = 6
 	Gravity = 0.21875
 	SlopeInfluence = 0.125
-	RollUp = 0.078125
-	RollDown = 0.3125
 	JumpSpeed = 6.5;
 	
 	//Flags
@@ -29,6 +27,7 @@
 	Skid = false;
 	ChangeDirection = true;
 	InputInterrupt = false;
+	CanCollide = true;
 	
 	//Hitbox
 	HitboxW = 9;
@@ -51,8 +50,11 @@
 	CanRoll = true;
 	SpindashRev = 0;
 	PeeloutRev = 0;
+	Hurt = H_NONE;
+	DeathTimer = 0;
 	
 	//Other
+	InvincibleTimer = 0;
 	ControlLock = 0;
 	PlaneIndex = 0;
 	Direction = 1;

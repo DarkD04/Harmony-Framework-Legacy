@@ -6,7 +6,7 @@
 	LoopEnd = 0;
 	
 	//Ring
-	Game.Rings = 0;
+	Game.Rings = 16;
 
 	//Timers
 	Game.ObjectTimer = 0;

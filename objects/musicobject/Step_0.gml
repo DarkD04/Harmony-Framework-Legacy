@@ -5,7 +5,6 @@
 		//Music loop
 		if(audio_sound_get_track_position(Playing[i]) >= LoopEnd[i] && LoopEnd[i] > 0){
 			audio_sound_set_track_position(Playing[i], LoopStart[i]);
-			show_debug_message("Music has looped")
 		}
 		//Fade
 		audio_sound_gain(Playing[i], global.BGMVolume * FadeOffset, 0)

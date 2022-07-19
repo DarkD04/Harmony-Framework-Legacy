@@ -18,11 +18,14 @@ function PlayerPerformSkid(){
 	
 	//When player is skidding
 	if(Skid){
+		//Change the flag
+		InputInterrupt = true;
+		
 		//Play animation
 		PlayerAnimation(ANIM_SKID, 5);
 		
 		//When not holding anything
-		if(Ground && Movement = 0) GroundSpeed -= Deceleration * sign(GroundSpeed);
+		if(Ground) GroundSpeed -= Deceleration * sign(GroundSpeed);
 		
 		//Change direction
 		if(sign(GroundSpeed) != 0) Direction = sign(GroundSpeed);	

@@ -1,4 +1,7 @@
 function CheckTerrain(RadiusX,RadiusY){
+	//Stop executing if CanColide is false
+	if(!CanCollide) exit;
+	
 	//Change radius depending on the mode
 	var X1, X2, Y1, Y2;
 	switch(Mode){
@@ -34,6 +37,9 @@ function CheckTerrain(RadiusX,RadiusY){
 }
 
 function CheckWall(RadiusX,RadiusY){
+	//Stop executing if CanColide is false
+	if(!CanCollide) exit;
+	
 	//Change radius depending on the mode
 	var X1, X2, Y1, Y2;
 	switch(Mode){
@@ -68,6 +74,9 @@ function CheckWall(RadiusX,RadiusY){
 }
 
 function CheckAngle(X,Y){
+	//Stop executing if CanColide is false
+	if(!CanCollide) exit;
+	
 	//This script is only used for angle detection collision
 	//Trigger the collision
 	if collision_point(X,Y,Collision,true,true){

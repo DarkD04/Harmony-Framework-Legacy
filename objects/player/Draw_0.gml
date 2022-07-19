@@ -1,7 +1,8 @@
 /// @description Render the player
 	
 	//Draw the player
-	draw_sprite_ext(sprite_index, image_index, floor(x), floor(y), image_xscale * Direction, image_yscale, image_angle, c_white, 1.0);
+	if(State = ST_HURT || InvincibleTimer mod 12 >= 6 || InvincibleTimer = 0)
+		draw_sprite_ext(sprite_index, image_index, floor(x), floor(y), image_xscale * Direction, image_yscale, image_angle, c_white, 1.0);
 	
 	//Draw spindash dust
 	if(State = ST_SPINDASH)

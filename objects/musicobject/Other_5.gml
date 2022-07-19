@@ -1,2 +1,2 @@
 /// @description Stop everything
-audio_stop_all();
+	audio_stop_all();

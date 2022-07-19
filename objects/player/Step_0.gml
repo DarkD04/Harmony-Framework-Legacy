@@ -35,9 +35,6 @@
 	//Player normal
 	PlayerNormal();
 	
-	//Player skid
-	PlayerPerformSkid();
-	
 	//Handle jump
 	PlayerPeformJump();
 	
@@ -46,6 +43,12 @@
 	
 	//Player state lists
 	PlayerStateList();
+	
+	//Handle hurt
+	PlayerHandleHurt();
+	
+	//Handle skid
+	PlayerPerformSkid();
 	
 	//Player's visual angle change
 	PlayerVisualAngle();
