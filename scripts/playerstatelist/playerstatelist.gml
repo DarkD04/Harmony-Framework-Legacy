@@ -12,9 +12,13 @@ function PlayerStateList(){
 	#macro ST_LOOKUP 1
 	#macro ST_LOOKDOWN 2
 	#macro ST_SPINDASH 3
+	#macro ST_PEELOUT 10
 	
 	//State scripts (All characters)
 	StateLookUp();
 	StateLookDown();
 	StateSpindash();
+	
+	//Sonic state scripts
+	StatePeelOut();
 }

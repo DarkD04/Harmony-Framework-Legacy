@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Player Scripts/States.yy",
   },
   "resourceVersion": "1.0",
-  "name": "PlayerHandleRoll",
+  "name": "StatePeelOut",
   "tags": [],
   "resourceType": "GMScript",
 }

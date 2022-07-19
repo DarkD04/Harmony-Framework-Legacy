@@ -1,4 +1,4 @@
-function PlayerHandleRoll(){
+function PlayerPerformRoll(){
 	if(!Roll && !Jumping && abs(GroundSpeed) > 1 && Input.Down && CanRoll && Ground)
 	{
 		PlaySound(Rolling);

@@ -10,4 +10,5 @@ function PlayerFallCases(){
 	
 	//Subtract control lock timer
 	ControlLock = max(ControlLock - 1, 0);
+	LandTimer = max(LandTimer - 1, 0);
 }

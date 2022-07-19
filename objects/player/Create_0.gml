@@ -23,8 +23,10 @@
 	//Flags
 	Ground = false;
 	Land = false;
+	LandTimer = 0;
 	PlatformCheck= true;
 	CanMove = true;
+	Skid = false;
 	ChangeDirection = true;
 	InputInterrupt = false;
 	

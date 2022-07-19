@@ -21,7 +21,7 @@ function PlayerVisualAngle(){
 	}
 	
 	//Force visual angle to 0 when wrong animation is playing
-	if(Animation != ANIM_WALK && Animation != ANIM_RUN) VisualAngle = 0;
+	if(Animation != ANIM_WALK && Animation != ANIM_RUN && Animation != ANIM_PEELOUT) VisualAngle = 0;
 	
 	//Change sprite's angle
 	image_angle = VisualAngle;

@@ -35,11 +35,14 @@
 	//Player normal
 	PlayerNormal();
 	
+	//Player skid
+	PlayerPerformSkid();
+	
 	//Handle jump
 	PlayerPeformJump();
 	
 	//Handle roll
-	PlayerHandleRoll();
+	PlayerPerformRoll();
 	
 	//Player state lists
 	PlayerStateList();
