@@ -1,5 +1,9 @@
 function PlayerControl(){
+	//Get input difference
 	var Movement = Input.Right - Input.Left;
+	
+	//Stop executing when input is being interrupted
+	if(InputInterrupt) exit;
 	
 	//Ground movement
 	if(Ground && !Roll){

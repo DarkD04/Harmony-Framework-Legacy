@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Spindash.wav",
-  "duration": 2.037891,
+  "soundFile": "spindash.wav",
+  "duration": 1.233832,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",

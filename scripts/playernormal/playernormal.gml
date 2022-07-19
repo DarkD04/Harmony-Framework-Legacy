@@ -1,17 +1,9 @@
 function PlayerNormal(){
-	//Wall stopper
-	if(CheckWall(-WallRadiusW-1, WallRadiusH) && GroundSpeed < 0){
-		GroundSpeed = 0;	
-		if(!Ground) XSpeed = 0;
-	}
-		
-	if(CheckWall(WallRadiusW+1, WallRadiusH) && GroundSpeed > 0){
-		GroundSpeed = 0;
-		if(!Ground) XSpeed = 0;
-	}
+	//Get input difference
+	var Movement = Input.Right - Input.Left;
 	
 	//Normal animation
-	if(!Jumping && !Roll && State = noone && Ground){		
+	if(!Jumping && !Roll && Ground && State = ST_NONE){		
 		//Standing animation
 		PlayerAnimation(ANIM_STAND, 1);
 		
@@ -20,5 +12,11 @@ function PlayerNormal(){
 		
 		//Running
 		if(abs(GroundSpeed) >= 6) PlayerAnimation(ANIM_RUN, floor(max(0, 4-abs(GroundSpeed))));
+		
+		//Pushing
+		if(Movement = Direction && Direction = 1 && CheckWall(WallRadiusW+1, WallRadiusH) || Movement = Direction && Direction = -1 && CheckWall(-WallRadiusW-1, WallRadiusH)){
+			Direction = Movement;
+			PlayerAnimation(ANIM_PUSH, 10);
+		}
 	}
 }

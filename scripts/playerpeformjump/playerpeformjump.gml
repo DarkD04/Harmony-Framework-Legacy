@@ -3,7 +3,7 @@ function PlayerPeformJump(){
 	if(Ground && Jumping) Jumping = false;
 		
 	//Make player jump
-	if(!Jumping && Input.abcPress && CanJump && Ground)
+	if(!Jumping && Input.ActionPress && CanJump && Ground)
 	{
 		PlayerAnimation(ANIM_ROLL, floor(max(0, 4-abs(GroundSpeed))));
 		PlaySound(Jump);
@@ -16,7 +16,7 @@ function PlayerPeformJump(){
 	}
 	
 	//Low jump
-	if(JumpFlag && Jumping && !Input.ABC && YSpeed <= -4)
+	if(JumpFlag && Jumping && !Input.Action && YSpeed <= -4)
 	{
 		YSpeed = -4;
 		JumpFlag = false;

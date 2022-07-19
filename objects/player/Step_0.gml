@@ -19,14 +19,14 @@
 		//Handle ground collision
 		if(Ground) PlayerCollisionGround();
 		
-		//Call wall collision [temp fix] 
-		repeat(16)	PlayerWallCollision();
-		
 		//Get ground angle
 		if(Ground) GroundAngle = GetAngle(); else GroundAngle = 0;
 		
 		//When player is falling
 		PlayerFallCases();
+		
+		//Stop player's speed when coliding with wall(small fix)
+		PlayerWallStopper();
 	}
 	
 	//Controlling the player
@@ -40,6 +40,9 @@
 	
 	//Handle roll
 	PlayerHandleRoll();
+	
+	//Player state lists
+	PlayerStateList();
 	
 	//Player's visual angle change
 	PlayerVisualAngle();

@@ -26,6 +26,7 @@
 	PlatformCheck= true;
 	CanMove = true;
 	ChangeDirection = true;
+	InputInterrupt = false;
 	
 	//Hitbox
 	HitboxW = 9;
@@ -33,13 +34,21 @@
 	WallRadiusW = 10;
 	WallRadiusH = 0;
 	
+	//Angle sensors
+	PointX[0] = x;
+	PointY[0] = y;
+	PointX[1] = x;
+	PointY[1] = y;
+	
 	//States
-	State = noone;
+	State = ST_NONE;
 	Jumping = false;
 	JumpFlag = false;
 	CanJump = true;
 	Roll = false;
 	CanRoll = true;
+	SpindashRev = 0;
+	PeeloutRev = 0;
 	
 	//Other
 	ControlLock = 0;

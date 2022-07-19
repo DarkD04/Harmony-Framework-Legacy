@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Player Scripts",
-    "path": "folders/Scripts/Player Scripts.yy",
+    "name": "Movement",
+    "path": "folders/Scripts/Player Scripts/Movement.yy",
   },
   "resourceVersion": "1.0",
   "name": "PlayerFallCases",

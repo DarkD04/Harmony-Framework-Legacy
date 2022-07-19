@@ -5,6 +5,10 @@ function PlayerAnimationList(){
 			ANIM_WALK = sprSonicWalk;
 			ANIM_RUN = sprSonicRun;
 			ANIM_ROLL = sprSonicRoll;
+			ANIM_LOOKUP = sprSonicLookUp;
+			ANIM_LOOKDOWN = sprSonicLookDown;
+			ANIM_SPINDASH =sprSonicSpindash;
+			ANIM_PUSH = sprSonicPush;
 		break;
 	}
 }
