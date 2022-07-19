@@ -9,18 +9,21 @@
 	repeat(Steps){
 		//Player hitbox
 		PlayerHitbox();
-	
+		
 		//This is where player moves
 		PlayerMovement();
 		
+		//Handle collision with solid objects only
+		HandleObjectCollision();
+		
 		//Collision stuff when player is in air
-		if(!Ground) PlayerCollisionAirborn();
+		if(!Ground && !OnObject) PlayerCollisionAirborn();
 		
 		//Handle ground collision
-		if(Ground) PlayerCollisionGround();
+		if(Ground && !OnObject) PlayerCollisionGround();
 		
 		//Get ground angle
-		if(Ground) GroundAngle = GetAngle(); else GroundAngle = 0;
+		if(Ground && !OnObject) GroundAngle = GetAngle(); else GroundAngle = 0;
 		
 		//When player is falling
 		PlayerFallCases();

@@ -99,6 +99,30 @@ function CheckAngle(X,Y){
 		}
 		ds_list_destroy(solidCollisions);
 	}
+}
 
+function ObjectCollision(X1, Y1, X2, Y2, SemiSolid = false){
+	//Stop executing if CanColide is false
+	if(!CanCollide) exit;
+
+	//Trigger the collision
+	if collision_rectangle(floor(x)+X1,floor(y)+Y1+1,floor(x)+X2,floor(y)+Y2+1,CollisionObject,true,true){
+		
+		//Get the value from the object with what youre coliding
+		var solidCollisions = ds_list_create();
+		var SolidCount = collision_rectangle_list(floor(x)+X1,floor(y)+Y1+1,floor(x)+X2,floor(y)+Y2+1,CollisionObject,true,true,solidCollisions,false);
+		for (var i = 0; i < SolidCount; i++)
+		{
+			var Solid =  solidCollisions[| i];
+			if(Solid.CollisionFlag){
+				if (Solid.CollisionType = "Full Solid" || Solid.CollisionType = "Semi Solid" && SemiSolid = true)
+				{
+					ds_list_destroy(solidCollisions);
+					return true;
+				}
+			}
+		}
+		ds_list_destroy(solidCollisions);
+	}
 }
 

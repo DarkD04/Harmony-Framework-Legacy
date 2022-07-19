@@ -28,6 +28,7 @@
 	ChangeDirection = true;
 	InputInterrupt = false;
 	CanCollide = true;
+	OnObject = false;
 	
 	//Hitbox
 	HitboxW = 9;

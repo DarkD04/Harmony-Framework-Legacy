@@ -1,17 +1,19 @@
 function PlayerWallCollision(){
-	
-	//Wall collision		
-	while(CheckWall(-WallRadiusW, WallRadiusH) && GroundSpeed <= 0)
-	{
-		x += YDir;
-		y += XDir;
+	//Wall collision	
+	if(GroundSpeed <= 0){
+		while(CheckWall(-WallRadiusW, WallRadiusH))
+		{
+			x += YDir;
+			y += XDir;
+		}
 	}
-	
 		
-	while(CheckWall(WallRadiusW, WallRadiusH) && GroundSpeed >= 0)
-	{
-		x -= YDir;
-		y -= XDir;
+	if(GroundSpeed >= 0){
+		while(CheckWall(WallRadiusW, WallRadiusH))
+		{
+			x -= YDir;
+			y -= YDir;
+		}
 	}
-	
+		
 }

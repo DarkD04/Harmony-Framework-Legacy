@@ -9,7 +9,6 @@ function PlayerCollisionAirborn(){
 			Jumping = false
 			Roll = false;
 			PlayerHitbox();
-			while(CheckTerrain(-HitboxW, -HitboxH) || CheckTerrain(HitboxW, -HitboxH)) y-=1;
 			Ground = true;
 			Land = true;
 			LandTimer = 4;
@@ -24,8 +23,6 @@ function PlayerCollisionAirborn(){
 			}
 		}
 	}
-	//Player wall collision
-	PlayerWallCollision();	
 	
 	//Ceiling collision
 	while(CheckTerrain(-HitboxW, -HitboxH) || CheckTerrain(HitboxW, -HitboxH)){

@@ -23,7 +23,7 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_1F0A0268","path":"rooms/rm_init/rm_init.yy",},
+    {"name":"inst_1F0A0268","path":"rooms/Startup/Startup.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -51,7 +51,7 @@
     "path": "folders/Scenes/Presentation.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_init",
+  "name": "Startup",
   "tags": [],
   "resourceType": "GMRoom",
 }
