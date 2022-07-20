@@ -4,9 +4,9 @@
 	#macro Game global
 	
 	// Screen values
-	Game.windowWidth  = 426;
-	Game.windowHeight = 240;
-	Game.windowSize   = 2;
+	Game.windowWidth  = 400;
+	Game.windowHeight = 224;
+	Game.windowSize   = 1;
 	
 	//keyboard inputs
 	global.up = vk_up;
