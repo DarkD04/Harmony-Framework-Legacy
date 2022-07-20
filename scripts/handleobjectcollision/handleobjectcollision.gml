@@ -3,8 +3,10 @@ function HandleObjectCollision(){
 		//Left Wall
 		if(GroundSpeed >= 0){
 			while(ObjectCollision(0, -HitboxH+2, WallRadiusW, HitboxH-2)){
-				GroundSpeed = 0;
-				XSpeed = 0;
+				if(WallStopper){
+					GroundSpeed = 0;
+					XSpeed = 0;
+				}
 				x -= 1;
 			}
 		}
@@ -12,14 +14,16 @@ function HandleObjectCollision(){
 		//Right Wall
 		if(GroundSpeed <= 0){
 			while(ObjectCollision(-WallRadiusW, -HitboxH+2, 0, HitboxH-2)){
-				GroundSpeed = 0;
-				XSpeed = 0;
+				if(WallStopper){
+					GroundSpeed = 0;
+					XSpeed = 0;
+				}
 				x += 1;
 			}
 		}
 	}
 	//Ceiling collision
-	while(ObjectCollision(-WallRadiusW, -HitboxH+min(YSpeed, 0), WallRadiusW, 0) && YSpeed < 0){
+	while(ObjectCollision(-WallRadiusW, -HitboxH, WallRadiusW, 0) && YSpeed < 0){
 		y+=1;
 		if(YSpeed < 0) YSpeed = 0;
 	}

@@ -29,6 +29,8 @@
 	InputInterrupt = false;
 	CanCollide = true;
 	OnObject = false;
+	CanLand = true;
+	WallStopper = false;
 	
 	//Hitbox
 	HitboxW = 9;

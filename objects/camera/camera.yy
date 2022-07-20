@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Common",
-    "path": "folders/Objects/Stage/Common.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Stage/Common/Controllers.yy",
   },
   "resourceVersion": "1.0",
   "name": "Camera",

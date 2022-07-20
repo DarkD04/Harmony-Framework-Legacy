@@ -17,8 +17,8 @@ function PlayerNormal(){
 		if(abs(GroundSpeed) >= 12) PlayerAnimation(ANIM_PEELOUT, 1);
 		
 		//Pushing
-		if(Movement = Direction && Direction = 1 && CheckWall(WallRadiusW+1, WallRadiusH) || Movement = Direction && Direction = -1 && CheckWall(-WallRadiusW-1, WallRadiusH)||
-		Movement = Direction && Direction = 1 && ObjectCollision(0, -HitboxH+2, WallRadiusW+1, HitboxH-2) || Movement = Direction && Direction = -1 && ObjectCollision(-WallRadiusW-1, -HitboxH+2, 0, HitboxH-2)){
+		if(WallStopper = true && Movement = Direction && Direction = 1 && CheckWall(WallRadiusW+1, WallRadiusH) || Movement = Direction && Direction = -1 && CheckWall(-WallRadiusW-1, WallRadiusH)||
+		WallStopper = true && Movement = Direction && Direction = 1 && ObjectCollision(0, -HitboxH+2, WallRadiusW+1, HitboxH-2) || Movement = Direction && Direction = -1 && ObjectCollision(-WallRadiusW-1, -HitboxH+2, 0, HitboxH-2)){
 			Direction = Movement;
 			PlayerAnimation(ANIM_PUSH, 10);
 		}

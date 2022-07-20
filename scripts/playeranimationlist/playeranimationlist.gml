@@ -16,6 +16,7 @@ function PlayerAnimationList(){
 			ANIM_HURT = sprSonicHurt;
 			ANIM_DIE = sprSonicDeath;
 			ANIM_DROWN = sprSonicDrown;
+			ANIM_SPRING = sprSonicSpring;
 		break;
 	}
 }

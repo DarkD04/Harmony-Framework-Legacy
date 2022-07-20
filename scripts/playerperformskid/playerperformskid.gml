@@ -1,6 +1,6 @@
 function PlayerPerformSkid(){
 	//if state isn't normal stop executing
-	if(State != ST_NONE || Roll || Jumping){
+	if(State != ST_NONE || Roll || Jumping || !Ground){
 		Skid = false;
 		exit;
 	}

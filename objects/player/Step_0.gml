@@ -2,6 +2,8 @@
 	
 	//Reset landing flag
 	Land = false;
+	CanLand = true;
+	WallStopper = true;
 	
 	//Steps
 	Steps = 1 + abs(round(GroundSpeed/16));

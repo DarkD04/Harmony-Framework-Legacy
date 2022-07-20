@@ -13,6 +13,7 @@
 	instance_activate_region(Player.x-64, Player.y-64, 128, 128, true);
 	
 	//Timers
+	if(!DisableTimer) Game.StageTimer += 1000/60;
 	Game.ObjectTimer += 1;
 
 	//Hide collision layer

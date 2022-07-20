@@ -5,8 +5,11 @@
 	LoopStart = 0;
 	LoopEnd = 0;
 	
-	//Ring
-	Game.Rings = 16;
+	//Stage values
+	DisableTimer = false;
+	Game.Score = 0;
+	Game.Rings = 0;
+	Game.Life = 3;
 
 	//Timers
 	Game.ObjectTimer = 0;
