@@ -36,7 +36,7 @@ function PlayerCollisionAirborn(){
 	}
 	
 	if(CeilingSide = 2){
-		GroundSpeed = -YSpeed * dsin(GroundAngle);
+		GroundSpeed = -YSpeed * dsin(GroundAngle)*1.2;
 		
 		if(Ground) CeilingSide = 0;
 		Ground = true
