@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Objects/Stage/Common/Sprites.yy",
+    "name": "Editor",
+    "path": "folders/Objects/Stage/Common/Sprites/Editor.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprEditorBridge",

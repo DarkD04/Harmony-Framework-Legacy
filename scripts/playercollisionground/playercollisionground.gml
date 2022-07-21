@@ -1,5 +1,5 @@
 function PlayerCollisionGround(){	
-	if(LandTimer < 3) PlayerWallCollision();
+	 PlayerWallCollision();
 	
 	//Detach from ground
 	if(!CheckTerrain(-HitboxW, HitboxH+16) && !CheckTerrain(HitboxW, HitboxH+16)){

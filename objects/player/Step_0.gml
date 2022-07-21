@@ -6,7 +6,7 @@
 	WallStopper = true;
 	
 	//Steps
-	Steps = 1 + abs(round(GroundSpeed/16));
+	Steps = 1 + abs(round(XSpeed/16)) + abs(round(YSpeed/16)) + (Ground ? 0 : 1);
 	
 	repeat(Steps){
 		//Player hitbox

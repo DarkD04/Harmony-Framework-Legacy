@@ -3,7 +3,6 @@ function PlayerCollisionAirborn(){
 	PlayerWallCollision();
 	
 	//Check for the ground
-		//Slope Up
 	if(!Ground){
 		if(CheckTerrain(-HitboxW, HitboxH) && YSpeed >= 0 || CheckTerrain(HitboxW, HitboxH) && YSpeed >= 0){
 			Jumping = false

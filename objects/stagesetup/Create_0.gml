@@ -8,7 +8,7 @@
 	//Stage values
 	DisableTimer = false;
 	Game.Score = 0;
-	Game.Rings = 0;
+	Game.Rings = 32;
 	Game.Life = 3;
 
 	//Timers

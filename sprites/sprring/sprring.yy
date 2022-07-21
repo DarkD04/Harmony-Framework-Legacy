@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Objects/Stage/Common/Sprites.yy",
+    "name": "Rings",
+    "path": "folders/Objects/Stage/Common/Sprites/Rings.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprRing",

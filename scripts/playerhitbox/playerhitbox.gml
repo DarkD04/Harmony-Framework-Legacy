@@ -21,5 +21,5 @@ function PlayerHitbox(){
 	}
 	
 	//Change wall radius y
-	if(Ground && GroundAngle = 0) WallRadiusH = 8;
+	if(Ground && !Land && GroundAngle = 0) WallRadiusH = 8;
 }

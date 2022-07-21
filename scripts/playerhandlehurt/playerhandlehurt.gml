@@ -10,9 +10,11 @@ function PlayerHandleHurt(){
 		Roll = false;
 		Jumping = false;
 	}
+	
 	//Hurt with rings
 	if(Hurt = H_KNOCKOUT && Game.Rings >= 1 && InvincibleTimer = 0){
 		PlaySound(Ringloss);
+		CreateRingloss(Game.Rings);
 		InvincibleTimer = 120;
 		XSpeed = -2*Direction;
 		YSpeed = -4;
@@ -23,7 +25,7 @@ function PlayerHandleHurt(){
 	}
 	
 	//Die when theres no rings
-	if(Hurt = H_KNOCKOUT && Game.Rings = 0 && InvincibleTimer = 0){
+	if(Hurt = H_KNOCKOUT && Game.Rings = 0 && InvincibleTimer = 0 || Hurt != H_DIE && y > Camera.DestinationBottom + 32){
 		PlaySound(Knockout);
 		GroundSpeed = 0;
 		XSpeed = 0;
@@ -79,5 +81,5 @@ function PlayerHandleHurt(){
 	if(State != ST_HURT) InvincibleTimer = max(InvincibleTimer-1, 0); 
 	
 	//die debug lol
-	if(keyboard_check_pressed(ord("H"))) Hurt = H_KNOCKOUT
+	if(keyboard_check_pressed(ord("H"))) Hurt = H_KNOCKOUT;
 }
