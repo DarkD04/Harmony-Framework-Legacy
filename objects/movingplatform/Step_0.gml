@@ -28,7 +28,7 @@
 	DifferenceY = floor(y) - floor(OldY);
 	
 	//Move the player
-	if(Player.Ground && PlayerCheckObject(C_BOTTOM)){
+	if(Player.Ground && PlayerCheckObject(C_BOTTOM_BIG)){
 		Player.x += floor(DifferenceX);	
 		Player.y += floor(DifferenceY);	
 	}

@@ -7,10 +7,14 @@
 	
 	//Stage values
 	DisableTimer = false;
-	Game.Score = 0;
-	Game.Rings = 32;
-	Game.Life = 3;
-
-	//Timers
-	Game.ObjectTimer = 0;
 	Game.StageTimer = 0;
+	Game.ObjectTimer = 0;
+	//Check checkpoint and set correct values
+	if(Game.Checkpoint != noone){
+		Player.x = Game.CheckpointX;
+		Player.y = Game.CheckpointY;
+		Game.StageTimer = Game.CheckpointTimer;
+		Game.Rings = Game.CheckpointRing;
+	}else{
+		Game.Rings = 0;		
+	}

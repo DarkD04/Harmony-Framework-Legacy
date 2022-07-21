@@ -8,7 +8,7 @@ function Destructable(RegionW = 16, RegionH = 16){
 	sh = Game.windowHeight;
 
 	//Inactivate the object
-	instance_deactivate_object(id);
+		instance_deactivate_object(id);
 		
 	//Activate the object when its onscreen
 	if(OnScreen())

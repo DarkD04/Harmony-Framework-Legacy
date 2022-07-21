@@ -35,7 +35,7 @@
 	if(Age = 50) event_user(0);
 	
 	//Bumping and physics
-	if(!Bumped && PlayerCheckObject(C_TOP)){
+	if(!Bumped && !Destroyed && PlayerCheckObject(C_TOP)){
 		Bumped = true
 		YSpeed = -2;
 	}

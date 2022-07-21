@@ -22,6 +22,18 @@
 	global.BGMVolume = 1;
 	global.SFXVolume = 1;
 	
+	//Stage values
+	Game.Score = 0;
+	Game.Rings = 0;
+	Game.Life = 3;
+
+	//Checkpoint
+	Game.Checkpoint = noone;
+	Game.CheckpointX = 0;
+	Game.CheckpointY = 0;
+	Game.CheckpointRing = 0;
+	Game.CheckpointTimer = 0;
+	
 	//Create controllers
 	instance_create_depth(0, 0, 0, Window)
 	instance_create_depth(0, 0, 0, MusicObject)

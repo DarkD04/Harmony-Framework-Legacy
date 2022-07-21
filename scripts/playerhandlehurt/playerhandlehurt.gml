@@ -10,22 +10,22 @@ function PlayerHandleHurt(){
 		Roll = false;
 		Jumping = false;
 	}
+	if(Hurt = H_KNOCKOUT && InvincibleTimer > 0) Hurt = H_NONE;
 	
 	//Hurt with rings
-	if(Hurt = H_KNOCKOUT && Game.Rings >= 1 && InvincibleTimer = 0){
+	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Game.Rings >= 1 && InvincibleTimer = 0){
 		PlaySound(Ringloss);
 		CreateRingloss(Game.Rings);
 		InvincibleTimer = 120;
 		XSpeed = -2*Direction;
-		YSpeed = -4;
+		if(!ObjectCollision(-WallRadiusW, -HitboxH-8, WallRadiusW, 0)) YSpeed = -4;
 		Ground = false;
 		State = ST_HURT;
-		Hurt = H_NONE;
 		Game.Rings = 0;
 	}
 	
 	//Die when theres no rings
-	if(Hurt = H_KNOCKOUT && Game.Rings = 0 && InvincibleTimer = 0 || Hurt != H_DIE && y > Camera.DestinationBottom + 32){
+	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Game.Rings = 0 && InvincibleTimer = 0 || Hurt != H_DIE && y > Camera.DestinationBottom + 32){
 		PlaySound(Knockout);
 		GroundSpeed = 0;
 		XSpeed = 0;
