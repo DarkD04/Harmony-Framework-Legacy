@@ -20,4 +20,5 @@ function PlayerCollisionGround(){
 		y -= YDir;
 		
 	}
+	
 }

@@ -64,6 +64,7 @@
 	Mode = 0;
 	XDir = 0;
 	YDir = 1;
+	CeilingSide = 0;
 	
 	//Animation
 	PlayerAnimationList();

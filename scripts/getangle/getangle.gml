@@ -4,21 +4,29 @@ function GetAngle(){
 
 	//Angle points Collision
 	repeat(36){
-		if !CheckAngle(PointX[0],PointY[0]){
-			switch(Mode){
-			case 0: PointY[0]+=1; break;
-			case 1: PointX[0]+=1; break;
-			case 2: PointY[0]-=1; break;
-			case 3: PointX[0]-=1; break;
+		if(Ground){
+			if !CheckAngle(PointX[0],PointY[0]){
+				switch(Mode){
+				case 0: PointY[0]+=1; break;
+				case 1: PointX[0]+=1; break;
+				case 2: PointY[0]-=1; break;
+				case 3: PointX[0]-=1; break;
+				}
+			}
+		
+			if !CheckAngle(PointX[1],PointY[1]){
+				switch(Mode){
+				case 0: PointY[1]+=1; break;
+				case 1: PointX[1]+=1; break;
+				case 2: PointY[1]-=1; break;
+				case 3: PointX[1]-=1; break;
+				}
 			}
 		}
-		
-		if !CheckAngle(PointX[1],PointY[1]){
-			switch(Mode){
-			case 0: PointY[1]+=1; break;
-			case 1: PointX[1]+=1; break;
-			case 2: PointY[1]-=1; break;
-			case 3: PointX[1]-=1; break;
+		if(!Ground){
+			if CeilingSide >= 1{
+				if !CheckAngle(PointX[0],PointY[0]) PointY[0]-=1;
+				if !CheckAngle(PointX[1],PointY[1]) PointY[1]-=1;
 			}
 		}
 	}

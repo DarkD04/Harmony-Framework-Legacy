@@ -15,23 +15,25 @@
 		//This is where player moves
 		PlayerMovement();
 		
+		if CeilingSide = 0 GroundAngle = 0;
+		
 		//Handle collision with solid objects only
 		HandleObjectCollision();
 		
 		//Collision stuff when player is in air
-		if(!Ground && !OnObject) PlayerCollisionAirborn();
+		if(!OnObject) PlayerCollisionAirborn();
 		
 		//Handle ground collision
 		if(Ground && !OnObject) PlayerCollisionGround();
 		
 		//Get ground angle
-		if(Ground && !OnObject) GroundAngle = GetAngle(); else GroundAngle = 0;
+		if(Ground && !OnObject || CeilingSide != 0) GroundAngle = GetAngle();
 		
 		//When player is falling
 		PlayerFallCases();
 		
 		//Stop player's speed when coliding with wall(small fix)
-		PlayerWallStopper();
+		if(CeilingSide = 0)PlayerWallStopper();
 	}
 	
 	//Controlling the player
