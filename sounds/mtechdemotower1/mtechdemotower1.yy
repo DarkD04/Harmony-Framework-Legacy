@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mtechdemotower1.ogg",
-  "duration": 81.870224,
+  "duration": 251.83629,
   "parent": {
     "name": "Music",
     "path": "folders/Music.yy",

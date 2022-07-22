@@ -1,4 +1,4 @@
-function OnScreen(RegionW = 0, RegionH = 0) {
+function OnScreen(RegionW = 16, RegionH = 16) {
 	var c, cx, cy, sw, sh;
 	c = view_camera[view_current]
 	cx = camera_get_view_x(c)
@@ -6,6 +6,6 @@ function OnScreen(RegionW = 0, RegionH = 0) {
 	sw = Game.windowWidth;
 	sh = Game.windowHeight;
  
-	if(bbox_right > cx-RegionW && (bbox_left < cx + sw +  RegionW && (bbox_bottom > cy - RegionH)) && (bbox_top < cy + sh-RegionH)) 
-		return true; else return false;
+	if(bbox_left >= cx-RegionW && bbox_right <= cx+sw+RegionW && bbox_top >= cy+RegionH && bbox_bottom <= cy+sh+RegionH)
+		return true;
 }

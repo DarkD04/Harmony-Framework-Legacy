@@ -6,7 +6,7 @@
 	// Screen values
 	Game.windowWidth  = 400;
 	Game.windowHeight = 224;
-	Game.windowSize   = 1;
+	Game.windowSize   = 2;
 	
 	//keyboard inputs
 	global.up = vk_up;

@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Harinezumi Framework 2.0",
-    "path": "Harinezumi Framework 2.0.yyp",
+    "name": "Stage Scripts",
+    "path": "folders/Scripts/Stage Scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "GetEndResults",

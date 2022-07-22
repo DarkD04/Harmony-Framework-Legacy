@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Harinezumi Framework 2.0",
-    "path": "Harinezumi Framework 2.0.yyp",
+    "name": "Engine",
+    "path": "folders/Scripts/Engine.yy",
   },
   "resourceVersion": "1.0",
   "name": "ObjectCheckCollision",

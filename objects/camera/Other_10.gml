@@ -26,17 +26,17 @@
 	//Subtract horizontal lag timer
 	VerticalLag = max(VerticalLag - 1, 0);
 	
-	/*//Look up and down
-	if(Target.state = CS_LOOK)
+	//Look up and down
+	if(Target.State = ST_LOOKUP)
 		LookTimer -= 1;
 		
-	if(Target.state = CS_CROUCH)
+	if(Target.State = ST_LOOKDOWN)
 		LookTimer += 1;
 		
 	//Restart looking timer
-	if(Target.state != CS_LOOK && LookTimer < 0 || Target.state != CS_CROUCH && LookTimer > 0)
+	if(Target.State != ST_LOOKUP && LookTimer < 0 || Target.State != ST_LOOKDOWN && LookTimer > 0)
 		LookTimer = 0;
-		*/
+		
 	//Shifting time
 	if(LookTimer <= -120)
 		LookShift = Approach(LookShift, -104, 2);
