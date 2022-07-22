@@ -1,4 +1,4 @@
-function PlayMusic(Music, Channel, Loopstart, Loopend){
+function PlayMusic(Music, Channel, Loopstart, Loopend, Loop = true){
 	/*	Argument documentation.
 		Music - Which music do you want to play.
 		Channel - You have two channels, you use macros "BGM" and "Jingle" to decide which channel is used.
@@ -29,6 +29,6 @@ function PlayMusic(Music, Channel, Loopstart, Loopend){
 		LoopEnd[Channel] = Loopend;
 		
 		//Play the sound
-		Playing[Channel] = audio_play_sound(Music, 0, true);
+		Playing[Channel] = audio_play_sound(Music, 0, Loop);
 	}
 }

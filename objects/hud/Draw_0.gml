@@ -47,6 +47,3 @@
 	
 	//Draw the surface
 	draw_surface(Surface, cx, cy);
-	
-
-	

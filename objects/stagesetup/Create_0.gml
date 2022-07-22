@@ -4,6 +4,7 @@
 	StageBGM = noone;
 	LoopStart = 0;
 	LoopEnd = 0;
+	NextStage = noone;
 	
 	//Stage values
 	DisableTimer = false;

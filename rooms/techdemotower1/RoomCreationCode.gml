@@ -5,4 +5,5 @@
 		StageBGM = mTechdemoTower1;	
 		LoopStart = 0.00;
 		LoopEnd = 0.00;
+		NextLevel = TechdemoTower1;
 	}

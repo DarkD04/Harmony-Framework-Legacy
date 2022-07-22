@@ -14,6 +14,7 @@ function PlayerStateList(){
 	#macro ST_SPINDASH 3
 	#macro ST_HURT 4
 	#macro ST_SPRING 5
+	#macro ST_VICTORY 6
 	#macro ST_PEELOUT 10
 	
 	//State scripts (All characters)
