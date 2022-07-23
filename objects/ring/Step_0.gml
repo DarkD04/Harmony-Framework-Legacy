@@ -28,7 +28,7 @@
 			XSpeed = XSpeed *-1;
 		}
 		
-		//Left collision
+		//Right collision
 		while(ObjectCheckTerrainPoint(7, 0) && XSpeed > 0){
 			x -= 1;	
 			XSpeed = XSpeed *-1;

@@ -5,6 +5,8 @@
 	LoopStart = 0;
 	LoopEnd = 0;
 	NextLevel = noone;
+	BadnikChain = 0;
+	AnimalArray = [];
 	
 	//Stage values
 	DisableTimer = false;

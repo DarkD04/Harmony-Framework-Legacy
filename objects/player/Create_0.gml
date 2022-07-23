@@ -31,6 +31,7 @@
 	OnObject = false;
 	CanLand = true;
 	WallStopper = false;
+	Attacking = false;
 	
 	//Hitbox
 	HitboxW = 9;

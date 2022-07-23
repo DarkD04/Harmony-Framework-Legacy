@@ -18,3 +18,6 @@
 
 	//Hide collision layer
 	layer_set_visible("Collision", false);
+	
+	//Break badnik chain when landing
+	if(Player.Land) BadnikChain = 0;

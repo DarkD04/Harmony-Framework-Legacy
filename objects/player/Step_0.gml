@@ -4,6 +4,7 @@
 	Land = false;
 	CanLand = true;
 	WallStopper = true;
+	Attacking = false;
 	
 	//Steps
 	Steps = 1 + abs(round(XSpeed/16)) + abs(round(YSpeed/16)) + (Ground ? 0 : 1);
@@ -38,6 +39,9 @@
 	
 	//Controlling the player
 	PlayerControl();
+		
+	//Player state lists
+	PlayerStateList();
 	
 	//Player normal
 	PlayerNormal();
@@ -47,9 +51,6 @@
 	
 	//Handle roll
 	PlayerPerformRoll();
-	
-	//Player state lists
-	PlayerStateList();
 	
 	//Handle hurt
 	PlayerHandleHurt();

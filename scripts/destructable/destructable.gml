@@ -1,4 +1,4 @@
-function Destructable(RegionW = 16, RegionH = 16){
+function Destructable(RegionW = 32, RegionH = 32){
 	//Get screen values
 	var c, cx, cy, sw, sh;
 	c = view_camera[view_current]

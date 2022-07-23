@@ -14,6 +14,7 @@ function StateSpindash(){
 		InputInterrupt = true;
 		CanRoll = false;
 		CanJump = false;
+		Attacking = true;
 		
 		//Make player move in air again
 		if(!Ground) InputInterrupt = false;

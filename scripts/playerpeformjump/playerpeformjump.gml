@@ -15,6 +15,9 @@ function PlayerPeformJump(){
 		Ground = false;
 	}
 	
+	//Attacking
+	if(Jumping) Attacking = true;
+	
 	//Low jump
 	if(JumpFlag && Jumping && !Input.Action && YSpeed <= -4)
 	{

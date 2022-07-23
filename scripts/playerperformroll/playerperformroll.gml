@@ -10,7 +10,7 @@ function PlayerPerformRoll(){
 	{
 		//Change animation
 		PlayerAnimation(ANIM_ROLL, floor(max(0, 4-abs(GroundSpeed))));
-			
+		
 		//Rolling physics
 		if(sign(GroundSpeed) = sign(dsin(GroundAngle))) GroundSpeed -= 0.078125 * dsin(GroundAngle) else GroundSpeed -= 0.3125 * dsin(GroundAngle)
 				
@@ -25,4 +25,8 @@ function PlayerPerformRoll(){
 		if(GroundSpeed < 0 && !Input.Left && Input.Right) GroundSpeed += 0.125;
 				
 	}
+	
+	//Player is attacking
+	if(Roll) Attacking = true;
+	
 }

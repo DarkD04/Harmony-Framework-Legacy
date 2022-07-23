@@ -6,6 +6,6 @@ function OnScreen(RegionW = 16, RegionH = 16) {
 	sw = Game.windowWidth;
 	sh = Game.windowHeight;
  
-	if(bbox_left >= cx-RegionW && bbox_right <= cx+sw+RegionW && bbox_top >= cy+RegionH && bbox_bottom <= cy+sh+RegionH)
+	if(bbox_left >= cx-RegionW && bbox_right <= cx+sw+RegionW && bbox_top >= cy-RegionH && bbox_bottom <= cy+sh+RegionH)
 		return true;
 }
