@@ -11,9 +11,19 @@ function PlayerHandleHurt(){
 		Jumping = false;
 	}
 	if(Hurt = H_KNOCKOUT && InvincibleTimer > 0) Hurt = H_NONE;
+	//Hurt with whield
+	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Shield != S_NONE && InvincibleTimer = 0){
+		PlaySound(Knockout);
+		InvincibleTimer = 120;
+		XSpeed = -2*Direction;
+		if(!ObjectCollision(-WallRadiusW, -HitboxH-8, WallRadiusW, 0)) YSpeed = -4;
+		Ground = false;
+		State = ST_HURT;
+		Shield = S_NONE;
+	}
 	
 	//Hurt with rings
-	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Game.Rings >= 1 && InvincibleTimer = 0){
+	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Game.Rings >= 1 && Shield = S_NONE && InvincibleTimer = 0){
 		PlaySound(Ringloss);
 		CreateRingloss(Game.Rings);
 		InvincibleTimer = 120;
@@ -25,7 +35,7 @@ function PlayerHandleHurt(){
 	}
 	
 	//Die when theres no rings
-	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Game.Rings = 0 && InvincibleTimer = 0 || Hurt != H_DIE && y > Camera.DestinationBottom + 32){
+	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Game.Rings = 0 && Shield = S_NONE && InvincibleTimer = 0 || Hurt != H_DIE && y > Camera.DestinationBottom + 32){
 		PlaySound(Knockout);
 		GroundSpeed = 0;
 		XSpeed = 0;

@@ -56,6 +56,8 @@
 	PeeloutRev = 0;
 	Hurt = H_NONE;
 	DeathTimer = 0;
+	Shield = S_NONE;
+	ShieldState = 0;
 	
 	//Other
 	InvincibleTimer = 0;

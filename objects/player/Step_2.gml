@@ -32,6 +32,4 @@
 	image_index = AniSubImage;
 	image_speed = 0;
 	AniSubImageNumber = image_number;
-	
-	
-	
+	ShieldReposition();

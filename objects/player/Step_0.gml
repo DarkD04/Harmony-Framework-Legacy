@@ -43,6 +43,9 @@
 	//Player state lists
 	PlayerStateList();
 	
+	//Player handle shields
+	PlayerShieldList();
+	
 	//Player normal
 	PlayerNormal();
 	

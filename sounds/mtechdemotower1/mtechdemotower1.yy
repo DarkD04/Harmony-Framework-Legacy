@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mtechdemotower1.ogg",
-  "duration": 251.83629,
+  "soundFile": "mtechdemotower1.mp3",
+  "duration": 193.04489,
   "parent": {
     "name": "Music",
     "path": "folders/Music.yy",
