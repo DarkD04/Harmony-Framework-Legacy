@@ -40,8 +40,7 @@
 	//Controlling the player
 	PlayerControl();
 		
-	//Player state lists
-	PlayerStateList();
+
 	
 	//Player handle shields
 	PlayerShieldList();
@@ -49,11 +48,14 @@
 	//Player normal
 	PlayerNormal();
 	
-	//Handle jump
-	PlayerPeformJump();
-	
 	//Handle roll
 	PlayerPerformRoll();
+	
+	//Player state lists
+	PlayerStateList();
+	
+	//Handle jump
+	PlayerPeformJump();
 	
 	//Handle hurt
 	PlayerHandleHurt();

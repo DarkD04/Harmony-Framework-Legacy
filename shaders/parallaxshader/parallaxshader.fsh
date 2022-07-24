@@ -16,11 +16,12 @@
 	float Result;
 
 	void main(){
-		float DiffX  = v_vPosition.x - Position.x;
+		float DiffX  = floor(v_vPosition.x - Position.x);
+		float DiffY  = floor(v_vPosition.y - Position.y);
 	
 		//Check if linescroll flag is on
 		if(!LineScroll)  Result = mod(OffsetX + DiffX, Width) - DiffX;
-		if(LineScroll)  Result = mod(OffsetX * (v_vPosition.y  / LineGaps * YSteps) + DiffX, Width) - DiffX;
+		if(LineScroll)  Result = mod(OffsetX * ((DiffY / LineGaps) * YSteps) + DiffX, Width) - DiffX;
 
 		gl_FragColor = v_vColour * texture2D( gm_BaseTexture, vec2((v_vTexcoord.x) + Result * TexelWidth, v_vTexcoord.y));
 	}

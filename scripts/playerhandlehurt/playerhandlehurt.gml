@@ -5,12 +5,16 @@ function PlayerHandleHurt(){
 	#macro H_DIE 2
 	#macro H_DROWN 3
 	
+	//Can't hurt when invisible
+	if(InvincibleTimer > 0) Hurt = H_NONE
+	
 	//Reset roll and jump flags
 	if(Hurt != H_NONE){
 		Roll = false;
 		Jumping = false;
 	}
 	if(Hurt = H_KNOCKOUT && InvincibleTimer > 0) Hurt = H_NONE;
+	
 	//Hurt with whield
 	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Shield != S_NONE && InvincibleTimer = 0){
 		PlaySound(Knockout);

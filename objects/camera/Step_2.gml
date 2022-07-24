@@ -1,5 +1,4 @@
 /// @description Essential
-
 	//Trigger camera mode based on user event
 	event_user(Mode);
 	

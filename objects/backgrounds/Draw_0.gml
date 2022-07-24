@@ -1,9 +1,4 @@
 /// @description Drawing background
-
-
-/// @description Scrolling
-	var cx = camera_get_view_x(view_camera[view_current]);
-	var cy = camera_get_view_y(view_camera[view_current]);
 	
 	for(var i = 0; i <= BackgroundID; i++){
 		//Apply the shader
@@ -37,6 +32,11 @@
 		var DifferenceX = Value[i][15];
 		var SpriteWidth = Value[i][16];
 		var TexWidth = Value[i][17];
+
+		//Scrolling
+		var cx = camera_get_view_x(view_camera[view_current]);
+		var cy = (camera_get_view_y(view_camera[view_current]) * FactorY) + OffsetY;
+		
 		//Set shader uniforms
 		shader_set_uniform_f(BGWidth, SpriteWidth);
 		shader_set_uniform_f(BGTexel, TexWidth);
@@ -44,10 +44,10 @@
 		shader_set_uniform_f(PosX, cx, cy);
 		shader_set_uniform_f(StepY, Steps);
 		shader_set_uniform_f(HeightY, Gaps);
-		shader_set_uniform_f(LineScr, LineScroll);
+		shader_set_uniform_f(LineScr, LineScroll); 
 		
 		//Draw the background
-		draw_sprite_part(Sprite, 0, Left, Top, Width, Height, cx, (cy*FactorY) + OffsetY);
+		draw_sprite_part(Sprite, 0, Left, Top, Width, Height, cx, cy);
 		
 		//Horizontal scroll
 		Value[i][13] = ((cx * FactorX) - OffsetX) mod SpriteWidth;

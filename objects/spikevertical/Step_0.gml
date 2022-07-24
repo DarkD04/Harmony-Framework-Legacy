@@ -2,7 +2,7 @@
 
 	//Bottom spike
 	if(PlayerCheckObject(C_BOTTOM) && Player.Ground && image_yscale > 0){
-		Player.Hurt = H_KNOCKOUT	
+		if(Player.Hurt = H_NONE) Player.Hurt = H_KNOCKOUT	
 	}
 	
 	//Top spike

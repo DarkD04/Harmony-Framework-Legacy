@@ -29,7 +29,7 @@ function PlayerCollisionAirborn(){
 	
 	if(CeilingSide = 1){
 		var TempAngle = GetAngle();	
-		if(TempAngle != 180 && ControlLock = 0) {
+		if(TempAngle <= 160 && ControlLock = 0 || TempAngle >= 200 && ControlLock = 0) {
 			GroundAngle = GetAngle();
 			CeilingSide = 2
 		} else CeilingSide = 0;
