@@ -17,6 +17,7 @@ function FireShieldPerform(){
 		
 		//Trigger the fire shield
 		if(ShieldState = 0 && Input.ActionPress && Jumping){
+			PlaySound(FireshieldDash);
 			Camera.HorizontalLag = 12;
 			XSpeed = 8 * Direction;
 			YSpeed = 0;

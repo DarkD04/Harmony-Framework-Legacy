@@ -18,12 +18,18 @@
 		
 		if CeilingSide = 0 GroundAngle = 0;
 		
+		//Airborn wall collision
+		PlayerWallCollision();
+	
+		//Player handle shields
+		PlayerShieldList();
+		
 		//Handle collision with solid objects only
 		HandleObjectCollision();
 		
 		//Collision stuff when player is in air
 		if(!OnObject) PlayerCollisionAirborn();
-		
+	
 		//Handle ground collision
 		if(Ground && !OnObject) PlayerCollisionGround();
 		
@@ -39,11 +45,6 @@
 	
 	//Controlling the player
 	PlayerControl();
-		
-
-	
-	//Player handle shields
-	PlayerShieldList();
 	
 	//Player normal
 	PlayerNormal();

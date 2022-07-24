@@ -14,4 +14,16 @@ function ShieldReposition(){
 		FireshieldBack.x = floor(x);
 		FireshieldBack.y = floor(y);
 	}
+	
+	if(instance_exists(ElectricShield)){
+		//Position the shield
+		ElectricShield.x = floor(x);
+		ElectricShield.y = floor(y);
+	}
+	
+	if(instance_exists(BubbleShield)){
+		//Position the shield
+		BubbleShield.x = floor(x);
+		BubbleShield.y = floor(y);
+	}
 }

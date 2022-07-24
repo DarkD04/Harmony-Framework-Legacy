@@ -19,35 +19,37 @@
 		x += XSpeed;
 		y += YSpeed;
 		
-		//Gravity
-		YSpeed += 0.1;
+		if(!Magnetize){
+			//Gravity
+			YSpeed += 0.1;
 		
-		//Left collision
-		while(ObjectCheckTerrainPoint(-7, 0) && XSpeed < 0){
-			x += 1;	
-			XSpeed = XSpeed *-1;
+			//Left collision
+			while(ObjectCheckTerrainPoint(-7, 0, false) && XSpeed < 0){
+				x += 1;	
+				XSpeed = XSpeed *-1;
+			}
+		
+			//Right collision
+			while(ObjectCheckTerrainPoint(7, 0, false) && XSpeed > 0){
+				x -= 1;	
+				XSpeed = XSpeed *-1;
+			}
+			//Top collision
+			while(ObjectCheckTerrainPoint(0, -7, false) && YSpeed < 0){
+				y += 1;	
+				YSpeed = YSpeed *-1;
+			}
+		
+			//Bottom collision
+			while(ObjectCheckTerrainPoint(0, 7) && YSpeed > 0){
+				y -= 1;	
+				YSpeed = YSpeed *-1;
+			}
+		
+			//Update ring age
+			Age += 1
+		
+			//Destroy
+			if(Age > 200) instance_destroy();
 		}
-		
-		//Right collision
-		while(ObjectCheckTerrainPoint(7, 0) && XSpeed > 0){
-			x -= 1;	
-			XSpeed = XSpeed *-1;
-		}
-		//Top collision
-		while(ObjectCheckTerrainPoint(0, -7) && YSpeed < 0){
-			y += 1;	
-			YSpeed = YSpeed *-1;
-		}
-		
-		//Bottom collision
-		while(ObjectCheckTerrainPoint(0, 7) && YSpeed > 0){
-			y -= 1;	
-			YSpeed = YSpeed *-1;
-		}
-		
-		//Update ring age
-		Age += 1
-		
-		//Destroy
-		if(Age > 200) instance_destroy();
 	}

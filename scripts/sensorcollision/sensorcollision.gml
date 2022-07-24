@@ -114,7 +114,7 @@ function ObjectCollision(X1, Y1, X2, Y2, SemiSolid = false){
 		for (var i = 0; i < SolidCount; i++)
 		{
 			var Solid =  solidCollisions[| i];
-			CanLand = Solid.CanLand;
+			if(Shield != S_BUBBLE || Shield = S_BUBBLE && ShieldState = 0)CanLand = Solid.CanLand;
 			WallStopper = Solid.WallStopper;
 			if(Solid.CollisionFlag){
 				if (Solid.CollisionType = "Full Solid" || Solid.CollisionType = "Semi Solid" && SemiSolid = true)

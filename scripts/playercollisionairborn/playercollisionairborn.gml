@@ -1,11 +1,8 @@
-function PlayerCollisionAirborn(){
-	//Airborn wall collision
-	PlayerWallCollision();
-	
+function PlayerCollisionAirborn(){	
 	//Check for the ground
 	if(!Ground && CeilingSide = 0){
 		if(CheckTerrain(-HitboxW, HitboxH) && YSpeed >= 0 || CheckTerrain(HitboxW, HitboxH) && YSpeed >= 0){
-			Jumping = false
+			if(CanLand) Jumping = false
 			Roll = false;
 			PlayerHitbox();
 			Ground = true;

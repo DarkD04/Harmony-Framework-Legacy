@@ -1,6 +1,6 @@
 function PlayerPeformJump(){
 	//Reset jump flag
-	if(Ground && Jumping) Jumping = false;
+	if(Ground && Jumping && CanLand) Jumping = false;
 		
 	//Make player jump
 	if(!Jumping && Input.ActionPress && CanJump && Ground)

@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "shieldobtain.ogg",
-  "duration": 0.667574,
+  "soundFile": "shieldobtain.wav",
+  "duration": 0.725646,
   "parent": {
     "name": "Objects",
     "path": "folders/Sounds/Objects.yy",

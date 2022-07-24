@@ -10,7 +10,7 @@ function StateSpring(){
 		PlayerAnimation(ANIM_SPRING, 6);		
 
 		//Change animation when falling
-		if(YSpeed > 0) PlayerAnimation(ANIM_WALK, 8);
+		if(YSpeed >= 0) PlayerAnimation(ANIM_WALK, 8);
 		
 		//Reset when grounded
 		if(Ground) State = ST_NONE;

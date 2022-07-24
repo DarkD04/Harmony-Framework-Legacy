@@ -42,7 +42,7 @@ function HandleObjectCollision(){
 	
 	//Landing
 	if(ObjectCollision(-WallRadiusW, 0, WallRadiusW, HitboxH+max(YSpeed/2, 0), true) && !OnObject && YSpeed >= 0){
-		Jumping = false
+		if(CanLand)Jumping = false
 		Roll = false;
 		PlayerHitbox();
 		Ground = true;
