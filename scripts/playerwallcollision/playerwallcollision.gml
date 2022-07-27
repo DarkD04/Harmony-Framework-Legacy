@@ -1,6 +1,6 @@
 function PlayerWallCollision(){
 	//Wall collision	
-	if(GroundSpeed <= 0){
+	if(GroundSpeed <= 2){
 		while(CheckWall(-WallRadiusW, WallRadiusH))
 		{
 			x += YDir;
@@ -8,7 +8,7 @@ function PlayerWallCollision(){
 		}
 	}
 		
-	if(GroundSpeed >= 0){
+	if(GroundSpeed >= -2){
 		while(CheckWall(WallRadiusW, WallRadiusH))
 		{
 			x -= YDir;

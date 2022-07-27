@@ -1,5 +1,8 @@
 /// @description Add background
-	event_inherited()
+	//Inherite create event from background parent
+	event_inherited();
+	
+	//Vertical scroll factor for all of the background
 	var VScroll = 0.9;
 	
 	//Make background

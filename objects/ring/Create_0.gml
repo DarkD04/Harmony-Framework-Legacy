@@ -5,3 +5,5 @@
 	Shattered = false;
 	Magnetize = false;
 	Age = 0;
+	
+	//Culling();

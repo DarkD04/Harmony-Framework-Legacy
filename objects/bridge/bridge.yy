@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprEditorBridge",
-    "path": "sprites/sprEditorBridge/sprEditorBridge.yy",
+    "name": "sprBridgeEditor",
+    "path": "sprites/sprBridgeEditor/sprBridgeEditor.yy",
   },
   "solid": false,
   "visible": true,

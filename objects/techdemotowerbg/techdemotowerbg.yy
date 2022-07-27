@@ -6,8 +6,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Backgrounds",
-    "path": "objects/Backgrounds/Backgrounds.yy",
+    "name": "Background",
+    "path": "objects/Background/Background.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

@@ -14,8 +14,8 @@
   "soundFile": "mtechdemotower1.ogg",
   "duration": 100.12168,
   "parent": {
-    "name": "Music",
-    "path": "folders/Music.yy",
+    "name": "Stage",
+    "path": "folders/Music/Stage.yy",
   },
   "resourceVersion": "1.0",
   "name": "mTechdemoTower1",

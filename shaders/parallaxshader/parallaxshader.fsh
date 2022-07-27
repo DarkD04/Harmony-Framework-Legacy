@@ -20,8 +20,8 @@
 		float DiffY  = floor(v_vPosition.y - Position.y);
 	
 		//Check if linescroll flag is on
-		if(!LineScroll)  Result = mod(OffsetX + DiffX, Width) - DiffX;
-		if(LineScroll)  Result = mod(OffsetX * ((DiffY / LineGaps) * YSteps) + DiffX, Width) - DiffX;
+		if(!LineScroll)  Result = mod(floor(OffsetX) + DiffX, Width) - DiffX;
+		if(LineScroll)  Result = mod(floor(OffsetX) * ((DiffY / LineGaps) * YSteps) + DiffX, Width) - DiffX;
 
 		gl_FragColor = v_vColour * texture2D( gm_BaseTexture, vec2((v_vTexcoord.x) + Result * TexelWidth, v_vTexcoord.y));
 	}

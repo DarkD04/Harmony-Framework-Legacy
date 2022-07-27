@@ -14,8 +14,8 @@
   "soundFile": "zonecomplete.ogg",
   "duration": 8.266667,
   "parent": {
-    "name": "Music",
-    "path": "folders/Music.yy",
+    "name": "Jingle",
+    "path": "folders/Music/Jingle.yy",
   },
   "resourceVersion": "1.0",
   "name": "ZoneComplete",

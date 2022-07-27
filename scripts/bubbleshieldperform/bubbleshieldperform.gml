@@ -1,5 +1,4 @@
 function BubbleShieldPerform(){
-	show_debug_message(string(CanLand))
 	//If shield is correct
 	if(Shield = S_BUBBLE){
 		//Create shield if it doesn't exist

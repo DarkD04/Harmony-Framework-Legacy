@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprCheckpointEditor",
-    "path": "sprites/sprCheckpointEditor/sprCheckpointEditor.yy",
+    "name": "sprCheckpointBody",
+    "path": "sprites/sprCheckpointBody/sprCheckpointBody.yy",
   },
   "solid": false,
   "visible": true,

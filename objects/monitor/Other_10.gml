@@ -2,9 +2,9 @@
 	switch(MonitorType){
 		case "10 Rings": PlaySound(Rings); Game.Rings+=10;break;
 		
-		case "Invincibility":	break;
+		case "Invincibility": break;
 		
-		case "SpeedShoes":	break;
+		case "SpeedShoes": Player.SpeedTimer = 1300; PlayMusic(SpeedShoeJingle, Jingle, 0, 0) break;
 		
 		case "Extra Life": PlaySound(Rings) Game.Life+=1; break;
 		

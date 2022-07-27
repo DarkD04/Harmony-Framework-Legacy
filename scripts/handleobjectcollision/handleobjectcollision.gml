@@ -1,4 +1,6 @@
 function HandleObjectCollision(){
+	PlayerHitbox();
+	
 	///Full ground collision
 	if(Ground && OnObject){
 		while(ObjectCollision(-WallRadiusW, 0, WallRadiusW, HitboxH+8, true) && !ObjectCollision(-WallRadiusW, 0, WallRadiusW, HitboxH, true)){
@@ -44,7 +46,6 @@ function HandleObjectCollision(){
 	if(ObjectCollision(-WallRadiusW, 0, WallRadiusW, HitboxH+max(YSpeed/2, 0), true) && !OnObject && YSpeed >= 0){
 		if(CanLand)Jumping = false
 		Roll = false;
-		PlayerHitbox();
 		Ground = true;
 		Land = true;
 		LandTimer = 4;
@@ -65,7 +66,6 @@ function HandleObjectCollision(){
 		}
 		
 		if(!ObjectCollision(-WallRadiusW, 0, WallRadiusW, HitboxH+2, true)){
-			//Ground = false;
 			OnObject = false;
 		}
 	}

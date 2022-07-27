@@ -58,6 +58,7 @@
 	DeathTimer = 0;
 	Shield = S_NONE;
 	ShieldState = 0;
+	SpeedTimer = 0;
 	
 	//Other
 	InvincibleTimer = 0;
@@ -77,9 +78,20 @@
 	AniSubImageDurationSet = 0;
 	AniSubImageNumber = 0;
 	AniSubImage = 0;
-	AniLoop = true;
 	AniLoopStart = 1;
 	PlayerAnimation(ANIM_STAND, 4)
 	
+	
 	//Create camera
 	instance_create_depth(x, y, depth, Camera);
+	
+	//Recording
+	RecordTimer = 0;
+	RecordX = [];
+	RecordY = [];
+	RecordAngle = [];
+	RecordXScale = [];
+	RecordYScale = []
+	RecordAnimation = [];
+	RecordAnimationFrame = [];
+	

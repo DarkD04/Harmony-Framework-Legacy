@@ -4,7 +4,7 @@ function PlayerCollisionAirborn(){
 		if(CheckTerrain(-HitboxW, HitboxH) && YSpeed >= 0 || CheckTerrain(HitboxW, HitboxH) && YSpeed >= 0){
 			if(CanLand) Jumping = false
 			Roll = false;
-			PlayerHitbox();
+		//	
 			Ground = true;
 			Land = true;
 			LandTimer = 4;

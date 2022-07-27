@@ -1,4 +1,4 @@
-function DrawBackground(ID, Sprite, FactorX, FactorY, OffsetX, OffsetY, Speed, Top, Left, Width, Height, LineScroll = false, Gaps = 1, Steps = 0){
+function DrawBackground(ID, Sprite, FactorX, FactorY, OffsetX, OffsetY, Speed, Top, Left, Width, Height, LineScroll = false, Gaps = 1, Steps = 0,YScale = 1, AnimFrame = 0){
 	//Last background ID
 	BackgroundID = ID;
 	
@@ -25,4 +25,8 @@ function DrawBackground(ID, Sprite, FactorX, FactorY, OffsetX, OffsetY, Speed, T
 	//Sprite and texel width
 	Value[BackgroundID][16] = sprite_get_width(Sprite);
 	Value[BackgroundID][17] = texture_get_texel_width(sprite_get_texture(Sprite, 0));
+	
+	//Extra arguments
+	Value[BackgroundID][18] = YScale;
+	Value[BackgroundID][19] = AnimFrame;
 }

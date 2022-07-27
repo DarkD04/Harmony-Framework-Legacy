@@ -16,5 +16,5 @@ function Destructable(RegionW = 32, RegionH = 32){
 		instance_activate_region(cx-RegionW, cy-RegionH, sw+RegionW, sh+RegionH, true);
 	
 	//Return the object ID
-	return id                            
+	return id    
 }

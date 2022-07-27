@@ -33,3 +33,4 @@
 	image_speed = 0;
 	AniSubImageNumber = image_number;
 	ShieldReposition();
+	PlayerRecording();

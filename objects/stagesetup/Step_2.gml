@@ -9,8 +9,8 @@
 	sh = Game.windowHeight;
 	
 	//Activate the object when its onscreen
-	instance_activate_region(cx-64, cy, sw+64, sh, true);
-	instance_activate_region(Player.x-64, Player.y-64, 128, 128, true);
+	instance_activate_region(cx-32, cy-32, sw+32, sh+32, true);
+	instance_activate_region(Player.x-64, Player.y-64, 64, 64, true);
 	
 	//Timers
 	if(!DisableTimer) Game.StageTimer += 1000/60;
