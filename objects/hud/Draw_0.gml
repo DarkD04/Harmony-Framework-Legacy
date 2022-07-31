@@ -12,7 +12,7 @@
 	cy = camera_get_view_y(view_camera[view_current]);
 	
 	//Create surface if it doesn't exist
-	if(!surface_exists(Surface)) Surface = surface_create(Game.windowWidth, Game.windowHeight);
+	if(!surface_exists(Surface)) Surface = surface_create(Game.ScreenWidth, Game.ScreenHeight);
 	
 	//Set surface target
 	surface_set_target(Surface);
@@ -22,7 +22,7 @@
 	draw_sprite(sprHudText, 0, HudX, 8);
 	draw_sprite(sprHudText, 1, HudX, 25);
 	draw_sprite(sprHudText, 2, HudX, 41);
-	draw_sprite(sprHudLifeIcon, Player.Character, HudX, Game.windowHeight-8);
+	draw_sprite(sprHudLifeIcon, Player.Character, HudX, Game.ScreenHeight-8);
 	
 	//Draw numbers
 	draw_set_halign(fa_right);
@@ -37,7 +37,7 @@
 	
 	//Life icon number
 	draw_set_font(NumbersLife);
-	draw_text(65, Game.windowHeight-15, string(Game.Life));
+	draw_text(65, Game.ScreenHeight-15, string(Game.Life));
 	
 	//Reset stuff
 	draw_set_halign(fa_left);

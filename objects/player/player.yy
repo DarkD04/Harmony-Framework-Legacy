@@ -3,7 +3,7 @@
     "name": "sprSonicIdle",
     "path": "sprites/sprSonicIdle/sprSonicIdle.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

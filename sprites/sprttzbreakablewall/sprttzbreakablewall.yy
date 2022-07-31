@@ -17,8 +17,8 @@
   "width": 32,
   "height": 64,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "TechdemoTower",
+    "path": "texturegroups/TechdemoTower",
   },
   "swatchColours": null,
   "gridX": 0,

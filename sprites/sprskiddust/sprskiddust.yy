@@ -17,8 +17,8 @@
   "width": 13,
   "height": 14,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Effects",
+    "path": "texturegroups/Effects",
   },
   "swatchColours": null,
   "gridX": 0,

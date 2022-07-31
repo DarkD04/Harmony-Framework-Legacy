@@ -4,7 +4,7 @@ function PlayerCollisionAirborn(){
 		if(CheckTerrain(-HitboxW, HitboxH) && YSpeed >= 0 || CheckTerrain(HitboxW, HitboxH) && YSpeed >= 0){
 			if(CanLand) Jumping = false
 			Roll = false;
-		//	
+			PlayerHitbox();
 			Ground = true;
 			Land = true;
 			LandTimer = 4;
@@ -40,10 +40,8 @@ function PlayerCollisionAirborn(){
 	}
 	
 	//Ceiling collision
-	while(CheckTerrain(-HitboxW, -HitboxH) || CheckTerrain(HitboxW, -HitboxH)){
+	while(CheckTerrain(-HitboxW, -HitboxH) && !Ground || CheckTerrain(HitboxW, -HitboxH) && !Ground){
 		if(YSpeed < 0 && CeilingSide <= 1) YSpeed = 0;
-		y += 1;
+			y += 1;
 	}
-		
-	
 }

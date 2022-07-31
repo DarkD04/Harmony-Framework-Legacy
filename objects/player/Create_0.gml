@@ -1,7 +1,7 @@
 /// @description Values
 	
 	//Basic values
-	Character = CHAR_SONIC;
+	Character = CHAR_KNUX;
 	XSpeed = 0;
 	YSpeed = 0;
 	GroundSpeed = 0;
@@ -19,8 +19,8 @@
 	JumpSpeed = 6.5;
 	
 	//Flags
-	Ground = false;
-	Land = false;
+	Ground = true;
+	Land = true;
 	LandTimer = 0;
 	PlatformCheck= true;
 	CanMove = true;
@@ -59,6 +59,12 @@
 	Shield = S_NONE;
 	ShieldState = 0;
 	SpeedTimer = 0;
+	TailsTimer = 0;
+	TailsGravity = 0;
+	Underwater = false;
+	GlideSpeed = 0;
+	GlideAngle = 90;
+	GlideDirection = 1;
 	
 	//Other
 	InvincibleTimer = 0;
@@ -72,13 +78,7 @@
 	
 	//Animation
 	PlayerAnimationList();
-	Animation = 0;
-	AnimationToBeSet = 0;
-	AniSubImageDurationTimer = 0;
-	AniSubImageDurationSet = 0;
-	AniSubImageNumber = 0;
-	AniSubImage = 0;
-	AniLoopStart = 1;
+	AnimationSystemSetup()
 	PlayerAnimation(ANIM_STAND, 4)
 	
 	
@@ -86,12 +86,5 @@
 	instance_create_depth(x, y, depth, Camera);
 	
 	//Recording
-	RecordTimer = 0;
-	RecordX = [];
-	RecordY = [];
-	RecordAngle = [];
-	RecordXScale = [];
-	RecordYScale = []
-	RecordAnimation = [];
-	RecordAnimationFrame = [];
+	PlayerRecordSetup();
 	

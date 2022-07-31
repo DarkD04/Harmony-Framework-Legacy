@@ -12,6 +12,8 @@
 		var HeightY = shader_get_uniform(ParallaxShader, "LineGaps");
 		var StepY = shader_get_uniform(ParallaxShader, "YSteps");
 		var LineScr = shader_get_uniform(ParallaxShader, "LineScroll");
+		var ScaleY = shader_get_uniform(ParallaxShader, "YScale");
+		var ShdHeight = shader_get_uniform(ParallaxShader, "Height");
 		
 		//Set the local variables
 		var Sprite = Value[i][0];
@@ -37,22 +39,22 @@
 
 		//Scrolling
 		var cx = camera_get_view_x(view_camera[view_current]);
-		var cy = (camera_get_view_y(view_camera[view_current]) * FactorY) + OffsetY;
+		var cy = floor(camera_get_view_y(view_camera[view_current]) * FactorY) + OffsetY;
 		
 		//Set shader uniforms
 		shader_set_uniform_f(BGWidth, SpriteWidth);
 		shader_set_uniform_f(BGTexel, TexWidth);
-		shader_set_uniform_f(OffX, (ScrollX));
+		shader_set_uniform_f(OffX, (cx * FactorX) - OffsetX);
 		shader_set_uniform_f(PosX, cx, cy);
 		shader_set_uniform_f(StepY, Steps);
 		shader_set_uniform_f(HeightY, Gaps);
 		shader_set_uniform_f(LineScr, LineScroll); 
+		shader_set_uniform_f(ScaleY, YScale); 
+		shader_set_uniform_f(ShdHeight, Height); 
 		
 		//Draw the background
 		draw_sprite_part_ext(Sprite, AnimFrame, Left, Top, Width, Height, cx, cy, 1, YScale, c_white, 1.0);
 		
-		//Horizontal scroll
-		Value[i][13] = ((cx * FactorX) - OffsetX) mod SpriteWidth;
 		
 		//Update the x offset by the speed
 		Value[i][3] += Speed;

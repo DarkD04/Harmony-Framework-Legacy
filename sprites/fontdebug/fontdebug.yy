@@ -17,8 +17,8 @@
   "width": 9,
   "height": 9,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GUI",
+    "path": "texturegroups/GUI",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -434,7 +434,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Sprites/Fonts.yy",
+    "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "fontDebug",

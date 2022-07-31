@@ -4,6 +4,7 @@ function PlayerStateList(){
 	ChangeDirection = true;
 	CanJump = true;
 	CanRoll = true;
+	CanMove = true;
 	
 	if(Roll || Jumping) State = ST_NONE;
 	
@@ -15,6 +16,21 @@ function PlayerStateList(){
 	#macro ST_HURT 4
 	#macro ST_SPRING 5
 	#macro ST_PEELOUT 10
+	#macro ST_FLY 11
+	#macro ST_GLIDE 12
+	#macro ST_CLIMB 13
+	#macro ST_LEDGECLIMB 14
+	
+	//Sonic state scripts
+	StatePeelOut();
+	
+	//Tails state scripts
+	StateFly();
+	
+	//Knux player scripts
+	StateKnuxGlide();
+	StateKnuxClimb();
+	StateKnuxLedge();
 	
 	//State scripts (All characters)
 	PlayerNormal();
@@ -26,6 +42,4 @@ function PlayerStateList(){
 	StateHurt();
 	StateSpring();
 	
-	//Sonic state scripts
-	StatePeelOut();
 }

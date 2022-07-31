@@ -15,6 +15,10 @@
 	
 	//Trigger the left side of the spring
 	if(PlayerCheckObject(C_LEFT) && !Triggered && image_xscale > 0){
+		if(Player.State = ST_GLIDE) {
+			Player.State = ST_NONE;
+			with(Player) PlayerAnimation(ANIM_RUN, 2);
+		}
 		Player.GroundSpeed = SpringPower;
 		Player.XSpeed = SpringPower;
 		Player.Direction = 1;
@@ -26,6 +30,10 @@
 	
 	//Trigger the left side of the spring
 	if(PlayerCheckObject(C_RIGHT) && !Triggered && image_xscale < 0){
+		if(Player.State = ST_GLIDE) {
+			Player.State = ST_NONE;
+			with(Player) PlayerAnimation(ANIM_RUN, 2);
+		}
 		Player.GroundSpeed = -SpringPower;
 		Player.XSpeed = -SpringPower;
 		Player.Direction = -1;

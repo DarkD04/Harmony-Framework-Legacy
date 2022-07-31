@@ -13,8 +13,8 @@
 	var cx, cy, sw, sh;
 	cx = camera_get_view_x(view_camera[view_current])
 	cy = camera_get_view_y(view_camera[view_current])
-	sw = Game.windowWidth;
-	sh = Game.windowHeight;
+	sw = Game.ScreenWidth;
+	sh = Game.ScreenHeight;
 	
 	//Reposition the limit
 	if LimitBottom > DestinationBottom 

@@ -6,7 +6,10 @@ function StateLookUp(){
 	//When looking up
 	if(State = ST_LOOKUP){
 		//Play correct animation
-		PlayerAnimation(ANIM_LOOKUP, 1, 1);
+		switch(Character){
+			case CHAR_KNUX: PlayerAnimation(ANIM_LOOKUP, 3, 2); break;
+			default: PlayerAnimation(ANIM_LOOKUP, 1); break;
+		}
 		
 		//Change flags
 		InputInterrupt = true;

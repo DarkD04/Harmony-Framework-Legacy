@@ -1,12 +1,15 @@
 {
   "spriteId": {
-    "name": "sprCheckpointBody",
-    "path": "sprites/sprCheckpointBody/sprCheckpointBody.yy",
+    "name": "sprCheckpointEditor",
+    "path": "sprites/sprCheckpointEditor/sprCheckpointEditor.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sprCheckpointBody",
+    "path": "sprites/sprCheckpointBody/sprCheckpointBody.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

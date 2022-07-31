@@ -11,8 +11,8 @@
 	CameraY = y;
 	TargetX = x;
 	TargetY = y;
-	CenterX = Game.windowWidth/2;
-	CenterY = Game.windowHeight/2;
+	CenterX = Game.ScreenWidth/2;
+	CenterY = Game.ScreenHeight/2;
 	
 	//Margins
 	MarginL = 16;

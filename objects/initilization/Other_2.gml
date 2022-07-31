@@ -1,12 +1,11 @@
 /// @description Set the value
-	
 	//Game macro
 	#macro Game global
 	
 	// Screen values
-	Game.windowWidth  = 400;
-	Game.windowHeight = 224;
-	Game.windowSize   = 2;
+	Game.ScreenWidth  = 400;
+	Game.ScreenHeight = 224;
+	Game.ScreenSize   = 2;
 	
 	//keyboard inputs
 	global.up = vk_up;

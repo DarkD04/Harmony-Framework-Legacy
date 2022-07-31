@@ -1,2 +1,2 @@
 /// @description Center the screen
-window_center();
+	window_center();

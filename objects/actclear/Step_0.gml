@@ -4,7 +4,7 @@
 	
 	//Make player play victory animation
 	with(Player){
-		State = ST_NONE;
+		State = -1;
 		CanRoll = false;
 		CanJump = false;
 		InputInterrupt = true;

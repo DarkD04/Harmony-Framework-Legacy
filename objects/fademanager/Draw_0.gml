@@ -2,14 +2,14 @@
 	
 	//Get screen position
 	var cx, cy, sw, sh;
-	cx = camera_get_view_x(view_camera[view_current])
-	cy = camera_get_view_y(view_camera[view_current])
-	sw = Game.windowWidth
-	sh = Game.windowHeight
+	cx = camera_get_view_x(view_camera[view_current]);
+	cy = camera_get_view_y(view_camera[view_current]);
+	sw = Game.ScreenWidth;
+	sh = Game.ScreenHeight;
 	
 	draw_set_color(c_black);
 	draw_set_alpha(Time);
-	draw_rectangle(cx, cy, cx+sw, cy+sh, false)
+	draw_rectangle(cx, cy, cx+sw, cy+sh, false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
 	

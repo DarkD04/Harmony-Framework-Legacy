@@ -37,7 +37,7 @@ function PlayerMovement(){
 	//Add gravity
 	if(!Ground){
 		GroundSpeed = XSpeed;
-		YSpeed += Gravity/Steps;
+		if(State != ST_GLIDE)YSpeed += Gravity/Steps;
 	}
 	
 	//Semi solid flag

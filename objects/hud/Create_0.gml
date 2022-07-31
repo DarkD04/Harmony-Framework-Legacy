@@ -1,7 +1,7 @@
 /// @description Values
 	
 	//HUD Values
-	Surface = surface_create(Game.windowWidth, Game.windowHeight);
+	Surface = surface_create(Game.ScreenWidth, Game.ScreenHeight);
 	HudX = 16;
 	
 	//Font

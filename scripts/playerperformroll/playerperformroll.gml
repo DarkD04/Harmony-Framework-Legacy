@@ -22,8 +22,9 @@ function PlayerPerformRoll(){
 			
 		//Turning to different direction
 		if(GroundSpeed > 0 && Input.Left && !Input.Right) GroundSpeed -= 0.125;
-		if(GroundSpeed < 0 && !Input.Left && Input.Right) GroundSpeed += 0.125;
-				
+		if(GroundSpeed < 0 && !Input.Left && Input.Right) GroundSpeed += 0.125;	
+		
+		
 	}
 	
 	//Player is attacking

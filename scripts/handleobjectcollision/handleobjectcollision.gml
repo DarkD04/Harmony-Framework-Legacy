@@ -12,9 +12,9 @@ function HandleObjectCollision(){
 		}
 	}
 
-	if(LandTimer < 3 || Land){
+	
 		//Left Wall
-		if(GroundSpeed >= 0){
+		if(GroundSpeed >= -2){
 			while(ObjectCollision(0, -HitboxH+3, WallRadiusW, HitboxH-3)){
 				if(WallStopper){
 					GroundSpeed = 0;
@@ -25,7 +25,7 @@ function HandleObjectCollision(){
 		}
 	
 		//Right Wall
-		if(GroundSpeed <= 0){
+		if(GroundSpeed <= 2){
 			while(ObjectCollision(-WallRadiusW, -HitboxH+3, 0, HitboxH-3)){
 				if(WallStopper){
 					GroundSpeed = 0;
@@ -34,7 +34,7 @@ function HandleObjectCollision(){
 				x += 1;
 			}
 		}
-	}
+	
 	
 	//Ceiling collision
 	while(ObjectCollision(-WallRadiusW, -HitboxH+min(YSpeed/3, 0), WallRadiusW, 0) && YSpeed < 0){
@@ -46,6 +46,7 @@ function HandleObjectCollision(){
 	if(ObjectCollision(-WallRadiusW, 0, WallRadiusW, HitboxH+max(YSpeed/2, 0), true) && !OnObject && YSpeed >= 0){
 		if(CanLand)Jumping = false
 		Roll = false;
+		PlayerHitbox();
 		Ground = true;
 		Land = true;
 		LandTimer = 4;

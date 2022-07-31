@@ -22,7 +22,10 @@ function PlayerPerformSkid(){
 		InputInterrupt = true;
 		
 		//Play animation
-		PlayerAnimation(ANIM_SKID, 5);
+		switch(Character){
+			case CHAR_KNUX: PlayerAnimation(ANIM_SKID, 3, 2); break;
+			default: PlayerAnimation(ANIM_SKID, 5); break;
+		}
 		
 		//When not holding anything
 		if(Ground) GroundSpeed -= Deceleration * sign(GroundSpeed);

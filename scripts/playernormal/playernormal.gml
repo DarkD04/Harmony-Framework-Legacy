@@ -22,19 +22,19 @@ function PlayerNormal(){
 			Direction = Movement;
 			PlayerAnimation(ANIM_PUSH, 10);
 		}
-		//if(ObjectCollision(0, -HitboxH+2, WallRadiusW, HitboxH-2))
+		
 		//Ledge (or balancing)
 		if(!CheckTerrain(0, HitboxH+16) && !ObjectCollision(0, 0, 1, HitboxH+8, true) && GroundSpeed = 0 && GroundAngle = 0){
 			//Right side
 			if(!CheckTerrain(HitboxW, HitboxH+16) && !ObjectCollision(WallRadiusW-1, 0, WallRadiusW, HitboxH+8, true)){
-				if Direction = 1 PlayerAnimation(ANIM_LEDGE1, 6);
-				if Direction = -1 PlayerAnimation(ANIM_LEDGE2, 6);
+				if Direction = 1 {PlayerAnimation(ANIM_LEDGE1, 6); if CHAR_KNUX PlayerAnimation(ANIM_LEDGE1, 6, 12);}
+				if Direction = -1 {PlayerAnimation(ANIM_LEDGE2, 6); if CHAR_KNUX PlayerAnimation(ANIM_LEDGE2, 6, 12);}
 			}
 			
 			//Left side
 			if(!CheckTerrain(-HitboxW, HitboxH+16) && !ObjectCollision(-WallRadiusW, 0, -WallRadiusW-1, HitboxH+8, true)){
-				if Direction = -1 PlayerAnimation(ANIM_LEDGE1, 6);
-				if Direction = 1 PlayerAnimation(ANIM_LEDGE2, 6);
+				if Direction = -1 {PlayerAnimation(ANIM_LEDGE1, 6); if CHAR_KNUX PlayerAnimation(ANIM_LEDGE1, 6, 12);}
+				if Direction = 1 {PlayerAnimation(ANIM_LEDGE2, 6); if CHAR_KNUX PlayerAnimation(ANIM_LEDGE2, 6, 12);}
 			}
 			
 		}

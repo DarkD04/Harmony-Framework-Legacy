@@ -17,12 +17,14 @@ function PlayerPeformJump(){
 	}
 	
 	//Attacking
-	if(Jumping) Attacking = true;
+	if(Jumping){
+		Attacking = true;
+	}
 	
 	//Low jump
-	if(JumpFlag && Jumping && !Input.Action && YSpeed <= -4)
+	if(JumpFlag && Jumping && !Input.Action && YSpeed <= -4/(Underwater+1))
 	{
-		YSpeed = -4;
+		YSpeed = -4/(Underwater+1);
 		JumpFlag = false;
 			
 	}

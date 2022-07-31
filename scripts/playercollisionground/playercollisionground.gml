@@ -16,7 +16,6 @@ function PlayerCollisionGround(){
 	while(CheckTerrain(-HitboxW, HitboxH) || CheckTerrain(HitboxW, HitboxH)){
 		x -= XDir;
 		y -= YDir;
-		
 	}
 	
 }

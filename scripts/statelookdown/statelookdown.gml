@@ -6,7 +6,10 @@ function StateLookDown(){
 	//When looking up
 	if(State = ST_LOOKDOWN){
 		//Play correct animation
-		PlayerAnimation(ANIM_LOOKDOWN, 1, 1);
+		switch(Character){
+			case CHAR_KNUX: PlayerAnimation(ANIM_LOOKDOWN, 3, 2); break;
+			default: PlayerAnimation(ANIM_LOOKDOWN, 1); break;
+		}
 		
 		//Change flags
 		InputInterrupt = true;

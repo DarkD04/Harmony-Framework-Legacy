@@ -1,0 +1,14 @@
+Harinezumi Framework 2.0 Credits
+
+	Programmer: Darkerd;
+	
+	Original Harinezumi Framework: AleksNB;
+	
+	Tile and background: Beta Nexus;
+	
+	Prototype Knuckles Sprites: SEGA, joshyflip and Emmanerd;
+	
+	Sonic Physics Guide: Mercury and Lapper;
+	
+	Special Thanks: Emneisium, Renegade, RetriDoti, NocturnusArtifex,
+	SoDaft Potato, Beta Nexus, ScarlyNight, snac, bluespheres07;
