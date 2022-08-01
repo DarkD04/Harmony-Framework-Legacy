@@ -1,4 +1,6 @@
 function PlayerCheckObject(Type){
+	
+	
 	//Collision macros
 	#macro C_MAIN 0
 	#macro C_LEFT 1

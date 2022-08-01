@@ -20,6 +20,8 @@ function PlayerStateList(){
 	#macro ST_GLIDE 12
 	#macro ST_CLIMB 13
 	#macro ST_LEDGECLIMB 14
+	#macro ST_KNUXFALL 15
+	#macro ST_KNUXSLIDE 16
 	
 	//Sonic state scripts
 	StatePeelOut();
@@ -31,6 +33,8 @@ function PlayerStateList(){
 	StateKnuxGlide();
 	StateKnuxClimb();
 	StateKnuxLedge();
+	StateKnuxFalling();
+	StateKnuxSlide();
 	
 	//State scripts (All characters)
 	PlayerNormal();

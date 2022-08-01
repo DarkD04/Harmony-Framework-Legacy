@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Harinezumi Framework 2.0",
-    "path": "Harinezumi Framework 2.0.yyp",
+    "name": "Common",
+    "path": "folders/Objects/Stage/Common.yy",
   },
   "resourceVersion": "1.0",
   "name": "Water",

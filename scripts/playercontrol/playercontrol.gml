@@ -33,15 +33,15 @@ function PlayerControl(){
 	}
 	
 	if(!Ground){
+		//Airdrag
+		if (YSpeed >= -4 && YSpeed < 0)
+			XSpeed -= (floor(XSpeed / 0.125) / 256);
+			
 		//Change direction
 		if(ChangeDirection && Movement != 0){
 			Direction = Movement;
 		}
-		
-		//Airdrag
-		if (YSpeed < 0 && YSpeed > -4)
-			XSpeed -= ((XSpeed / 0.125) / 256);
-			
+				
 		//Accelerate
 		if(Movement != 0 && XSpeed <= TopSpeed && XSpeed >= -TopSpeed)
 			XSpeed += (Acceleration*2) * Movement;

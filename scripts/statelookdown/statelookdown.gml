@@ -1,6 +1,6 @@
 function StateLookDown(){
 	//Check and trigger
-	if(Ground && !Jumping && !Roll && Input.Down && abs(GroundSpeed) < 0.5 && State = ST_NONE)
+	if(Ground && !Jumping && !Roll && Input.Down && abs(GroundSpeed) < 0.5 && State = ST_NONE && ControlLock = 0)
 		State = ST_LOOKDOWN
 		
 	//When looking up

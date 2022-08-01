@@ -15,6 +15,12 @@ function FireShieldPerform(){
 		FireshieldFront.sprite_index = sprFireshieldFront;
 		FireshieldBack.sprite_index = sprFireshieldBack;
 		
+		//No shield underwater >:(
+		if(Underwater) Shield = S_NONE;
+		
+		//Stop executing when not sonic
+		if(Character != CHAR_SONIC) exit;
+		
 		//Trigger the fire shield
 		if(ShieldState = 0 && Input.ActionPress && Jumping){
 			PlaySound(FireshieldDash);
@@ -23,6 +29,9 @@ function FireShieldPerform(){
 			YSpeed = 0;
 			ShieldState = 1;
 		}
+		
+		//Reset shield state
+		if(State != ST_NONE) ShieldState = 0;
 		
 		//When its in next state
 		if(ShieldState = 1){

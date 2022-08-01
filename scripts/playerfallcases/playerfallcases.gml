@@ -5,7 +5,7 @@ function PlayerFallCases(){
 		ControlLock = 30;
 		
 		//Fully detach
-		if(GroundAngle >= 90 && GroundAngle <= 270) Ground = false;
+		if(GroundAngle >= 70 && GroundAngle <= 240) Ground = false;
 	}
 	
 	//Subtract control lock timer

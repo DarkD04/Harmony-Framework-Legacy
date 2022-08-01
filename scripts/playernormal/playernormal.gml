@@ -11,7 +11,7 @@ function PlayerNormal(){
 		if(GroundSpeed != 0) PlayerAnimation(ANIM_WALK, floor(max(0, 8-abs(GroundSpeed))));
 		
 		//Running
-		if(abs(GroundSpeed) >= 6) PlayerAnimation(ANIM_RUN, floor(max(0, 4-abs(GroundSpeed))));
+		if(abs(GroundSpeed) >= 6) PlayerAnimation(ANIM_RUN, floor(max(0, 8-abs(GroundSpeed))));
 		
 		//Max run
 		if(abs(GroundSpeed) >= 12) PlayerAnimation(ANIM_PEELOUT, 1);

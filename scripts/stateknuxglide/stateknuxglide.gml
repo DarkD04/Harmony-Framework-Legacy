@@ -3,7 +3,7 @@ function StateKnuxGlide(){
 		GlideSpeed = 4;
 		GlideDirection = Direction;
 		GlideAngle = 90 * Direction;
-		YSpeed = max(YSpeed, 0);
+		YSpeed = max(YSpeed, 0.5);
 		Jumping = false;
 		State = ST_GLIDE;
 	}
@@ -33,7 +33,18 @@ function StateKnuxGlide(){
 		//Update speeds
 		XSpeed = GlideSpeed * dsin(GlideAngle);
 		
+		//Accelerate
+		if(GlideAngle = -90 || GlideAngle = 90) GlideSpeed += 0.015625;
+		
+		//Fall when not holding action key
+		if(!Input.Action){
+			XSpeed = 0.25 * Direction;
+			YSpeed = 0;
+			State = ST_KNUXFALL;
+		}
+		
 		//Change the gravity
+		
 		if (YSpeed < 0.5) YSpeed += 0.125;
 		if (YSpeed > 0.5) YSpeed -= 0.125;
 		
@@ -42,5 +53,9 @@ function StateKnuxGlide(){
 			State = ST_NONE;
 		}
 		
+		//Slide when not on ground
+		if(Ground){
+			State = ST_KNUXSLIDE;
+		}
 	}
 }

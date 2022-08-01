@@ -30,7 +30,7 @@ function StateSpindash(){
 		}
 		
 		//Change the pitch of spindash sound
-		if(SpindashRev > 2) audio_sound_pitch(Spindash, 0.4+SpindashRev/6); else audio_sound_pitch(Spindash, 1);
+		if(SpindashRev > 2) audio_sound_pitch(Spindash, 1+SpindashRev/16); else audio_sound_pitch(Spindash, 1);
 		
 		//Release the spindash
 		if(!Input.Down){

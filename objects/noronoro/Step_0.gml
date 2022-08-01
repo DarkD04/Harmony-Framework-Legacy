@@ -16,8 +16,8 @@
 	var HitboxW = (bbox_right - bbox_left)/2;
 	
 	//Handle collision
-	while(!ObjectCheckTerrain(-HitboxW, 0, HitboxW, 15) && ObjectCheckTerrain(-HitboxW, 0, HitboxW, 20)) y += 1;
-	while(ObjectCheckTerrain(-HitboxW, 0, HitboxW, 15)) y -= 1;
+	while(!ObjectCheckTerrainPoint(0, 14) && ObjectCheckTerrainPoint(0, 20)) y += 1;
+	while(ObjectCheckTerrainPoint(0, 14)) y -= 1;
 	
 	//Turn when reaching edges
 	if(Direction = 1 && !ObjectCheckTerrainPoint(HitboxW, 20)) Direction = -1

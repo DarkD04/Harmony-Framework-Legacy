@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "States",
-    "path": "folders/Scripts/Player Scripts/States.yy",
+    "name": "Tails",
+    "path": "folders/Scripts/Player Scripts/States/Tails.yy",
   },
   "resourceVersion": "1.0",
   "name": "StateFly",

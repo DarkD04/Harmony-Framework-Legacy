@@ -14,13 +14,13 @@ function PlayerCollisionAirborn(){
 			
 			//Landing speed
 			if(abs(GroundSpeed) <= YSpeed){
-				if(GroundAngle >= 24 && GroundAngle <= 45 || GroundAngle >= 316 && GroundAngle <= 338) GroundSpeed = (-YSpeed * 0.5 *(dsin(GroundAngle)));
-				if(GroundAngle >= 46 && GroundAngle <= 90 || GroundAngle >= 270 && GroundAngle <= 315) GroundSpeed = -YSpeed * dsin(GroundAngle);
+				if(GroundAngle >= 24 && GroundAngle <= 45 || GroundAngle >= 316 && GroundAngle <= 338) GroundSpeed -= (YSpeed * 0.5 *(dsin(GroundAngle)));
+				if(GroundAngle >= 46 && GroundAngle <= 90 || GroundAngle >= 270 && GroundAngle <= 315) GroundSpeed -= YSpeed * dsin(GroundAngle);
 			}
 		}
 	}
 	//Ceiling landing code
-	if(CheckTerrain(-HitboxW, -HitboxH) && !CheckTerrain(HitboxW, -HitboxH) && YSpeed < 2 && !Ground || CheckTerrain(HitboxW, -HitboxH) && !CheckTerrain(-HitboxW, -HitboxH) && YSpeed < 2 && !Ground){
+	if(CheckTerrain(-HitboxW, -HitboxH) && !CheckTerrain(HitboxW, -HitboxH) && YSpeed < -2 && !Ground || CheckTerrain(HitboxW, -HitboxH) && !CheckTerrain(-HitboxW, -HitboxH) && YSpeed < -2 && !Ground){
 		CeilingSide = 1;	
 	}
 	
@@ -41,7 +41,10 @@ function PlayerCollisionAirborn(){
 	
 	//Ceiling collision
 	while(CheckTerrain(-HitboxW, -HitboxH) && !Ground || CheckTerrain(HitboxW, -HitboxH) && !Ground){
-		if(YSpeed < 0 && CeilingSide <= 1) YSpeed = 0;
-			y += 1;
+		if(YSpeed < 0){
+			YSpeed = 0;
+			TailsGravity = 1;
+		}
+		y += 1;
 	}
 }

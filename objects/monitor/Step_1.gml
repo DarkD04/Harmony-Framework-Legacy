@@ -7,7 +7,11 @@
 		
 		case "SpeedShoes":	Icon = sprIconSpeedShoe;	break;
 		
-		case "Extra Life":	Icon = sprIconLifeSonic;	break;
+		case "Extra Life":	switch(Player.Character){
+			case CHAR_SONIC: Icon = sprIconLifeSonic; break;
+			case CHAR_TAILS: Icon = sprIconLifeTails; break;
+			case CHAR_KNUX: Icon = sprIconLifeKnux; break;
+		} break;
 		
 		case "Eggman":	Icon = sprIconEggman;	break;
 		

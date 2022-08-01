@@ -11,6 +11,13 @@ function PlayerShieldList(){
 	
 	//Fire shield
 	FireShieldPerform();
+	
+	//Electric shield
 	ElectricShieldPerform();
+	
+	//Bubble shield
 	BubbleShieldPerform();
+	
+	//Reset shield state if not sonic
+	if(Character != CHAR_SONIC) ShieldState = 0;
 }

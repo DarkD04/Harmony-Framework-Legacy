@@ -11,12 +11,12 @@
 	HorizontalLag = max(HorizontalLag - 1, 0);
 	
 	//Scroll horizontall:
-	if(!Target.Ground)
+	if(!Target.Ground || Target.State = ST_KNUXSLIDE)
 	{
 		if(Target.y >= TargetY + MarginB && VerticalLag = 0)
 			TargetY = min(TargetY+SpeedY, Target.y - MarginB);
 		
-		if(Target.y <= TargetY - MarginT && VerticalLag = 0)
+		if(Target.y <= TargetY - MarginT && VerticalLag = 0) 
 			TargetY = max(TargetY-SpeedY, Target.y + MarginT);
 	}else
 	{

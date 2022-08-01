@@ -3,6 +3,7 @@ function StateFly(){
 		Jumping = false;
 		TailsTimer = 480;
 		State = ST_FLY;
+		YSpeed = max(YSpeed, -2);
 	}
 	
 	if(State = ST_FLY){
@@ -12,6 +13,8 @@ function StateFly(){
 		}else{
 			if(!Underwater) PlayerAnimation(ANIM_TIRED, 2); else PlayerAnimation(ANIM_SWIM_TIRED, 2);
 		}
+		//Speed cap
+		YSpeed = max(YSpeed, -4);
 		
 		//Change flags
 		InputInterrupt = false;

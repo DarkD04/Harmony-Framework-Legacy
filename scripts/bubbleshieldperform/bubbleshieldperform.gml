@@ -15,6 +15,9 @@ function BubbleShieldPerform(){
 			BubbleShield.image_speed = 1.2;
 		}
 		
+		//Stop executing when not sonic
+		if(Character != CHAR_SONIC) exit;
+		
 		//Trigger the fire shield
 		if(ShieldState = 0 && Input.ActionPress && Jumping && LandTimer = 0){
 			BubbleShield.sprite_index = sprBubbleShieldBounce;

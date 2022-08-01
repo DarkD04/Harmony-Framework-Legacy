@@ -14,7 +14,7 @@
 	draw_clear_alpha(c_black,0);
 	
 	//Draw the end card text
-	draw_sprite(hudCharGot, 0, Game.ScreenWidth/2 - OffsetX[0], Game.ScreenHeight/2 - 56);
+	draw_sprite(hudCharGot, Player.Character, Game.ScreenWidth/2 - OffsetX[0], Game.ScreenHeight/2 - 56);
 	draw_sprite(hudThroughZone, 0, Game.ScreenWidth/2 + OffsetX[0], Game.ScreenHeight/2 - 40);
 	
 	draw_sprite(hudEndCardText, 0, Game.ScreenWidth/2-98 + OffsetX[1], Game.ScreenHeight/2);

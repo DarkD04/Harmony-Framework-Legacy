@@ -72,7 +72,7 @@ function PlayerHandleHurt(){
 	if(Hurt = H_DIE || Hurt = H_DROWN){
 		//Get camera position
 		var BottomScreen
-		BottomScreen = camera_get_view_y(view_camera[view_current]) + Game.windowHeight;
+		BottomScreen = camera_get_view_y(view_camera[view_current]) + Game.ScreenHeight;
 		
 		//Add death timer
 		if(y > BottomScreen + 16)

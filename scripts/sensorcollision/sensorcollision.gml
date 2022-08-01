@@ -54,7 +54,7 @@ function CheckWall(RadiusX,RadiusY){
 		
 		//Get the value from the object with what youre coliding
 		var solidCollisions = ds_list_create();
-		var SolidCount = collision_line_list(floor(x)+X1,floor(y)+Y1,floor(x)+X2,floor(y)+Y2,Collision,true,true,solidCollisions,false);
+		var SolidCount = collision_line_list((x)+X1,(y)+Y1,(x)+X2,(y)+Y2,Collision,true,true,solidCollisions,false);
 		for (var i = 0; i < SolidCount; i++)
 		{
 			var Solid =  solidCollisions[| i];

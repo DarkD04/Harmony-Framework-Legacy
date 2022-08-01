@@ -1,7 +1,7 @@
 /// @description Values
 	
 	//Basic values
-	Character = CHAR_KNUX;
+	Character = Game.Character;
 	XSpeed = 0;
 	YSpeed = 0;
 	GroundSpeed = 0;
@@ -38,6 +38,7 @@
 	HitboxH = 19;
 	WallRadiusW = 10;
 	WallRadiusH = 0;
+	PrevHitboxH = 0;
 	
 	//Angle sensors
 	PointX[0] = x;

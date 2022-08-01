@@ -1,6 +1,6 @@
 function StateLookUp(){
 	//Check and trigger
-	if(Ground && !Jumping && !Roll && Input.Up && GroundSpeed = 0 && State = ST_NONE)
+	if(Ground && !Jumping && !Roll && Input.Up && GroundSpeed = 0 && State = ST_NONE && ControlLock = 0)
 		State = ST_LOOKUP
 		
 	//When looking up

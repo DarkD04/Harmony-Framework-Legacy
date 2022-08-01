@@ -25,7 +25,7 @@
 	cy = camera_get_view_y(view_camera[view_current]);
 	
 	//Create surface if it doesn't exist
-	if(!surface_exists(Surface)) Surface = surface_create(Game.windowWidth, Game.windowHeight);
+	if(!surface_exists(Surface)) Surface = surface_create(Game.ScreenWidth, Game.ScreenHeight);
 	
 	//Set surface target
 	draw_set_font(Font);
@@ -34,19 +34,19 @@
 	
 	draw_set_color(c_black)
 	draw_set_alpha(0.6)
-	draw_rectangle(Game.windowWidth-168, 8, Game.windowWidth-16, Game.windowHeight-64, false);
+	draw_rectangle(Game.ScreenWidth-168, 8, Game.ScreenWidth-16, Game.ScreenHeight-64, false);
 	draw_set_color(c_white)
 	draw_set_alpha(1)
 	
-	draw_text(Game.windowWidth-162, 8, "THE PLAYER DEBUG")	
+	draw_text(Game.ScreenWidth-162, 8, "THE PLAYER DEBUG")	
 
 	
 	for(var i = 0; i < array_length(DebugText); i++){
-		draw_text(Game.windowWidth-168, 32+(8*i), DebugText[i] + string(DebugInfo[i]))	
+		draw_text(Game.ScreenWidth-168, 32+(8*i), DebugText[i] + string(DebugInfo[i]))	
 	}
 	
-	draw_text(Game.windowWidth-132, Game.windowHeight-20,"FPS: "+string(fps));
-	draw_text(Game.windowWidth-132, Game.windowHeight-12,"TRUE FPS: "+string(floor(fps_real)));
+	draw_text(Game.ScreenWidth-132, Game.ScreenHeight-20,"FPS: "+string(fps));
+	draw_text(Game.ScreenWidth-132, Game.ScreenHeight-12,"TRUE FPS: "+string(floor(fps_real)));
 
 	//Reset surface target ID
 	surface_reset_target();

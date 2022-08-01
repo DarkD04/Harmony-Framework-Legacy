@@ -22,7 +22,7 @@
 	
 	//Speeds
 	SpeedX = 16;
-	SpeedY = 16;
+	SpeedY = 64;
 	
 	//Limits
 	DestinationLeft = 0;

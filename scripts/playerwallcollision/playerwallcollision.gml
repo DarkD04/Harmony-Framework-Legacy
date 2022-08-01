@@ -4,7 +4,7 @@ function PlayerWallCollision(){
 		while(CheckWall(-WallRadiusW, WallRadiusH))
 		{
 			x += YDir;
-			y += XDir;
+			y -= XDir;
 		}
 	}
 		
@@ -12,7 +12,7 @@ function PlayerWallCollision(){
 		while(CheckWall(WallRadiusW, WallRadiusH))
 		{
 			x -= YDir;
-			y -= XDir;
+			y += XDir;
 		}
 	}
 		

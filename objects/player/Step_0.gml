@@ -18,16 +18,13 @@
 	Steps = 1 + abs(round(XSpeed/16)) + abs(round(YSpeed/16)) + (Ground ? 0 : 1);
 	
 	repeat(Steps){
-		//Player hitbox
-		PlayerHitbox();
-		
 		//This is where player moves
 		PlayerMovement();
 		
 		if(!Ground && CeilingSide = 0 && !OnObject) GroundAngle = 0;
 		
 		//Airborn wall collision
-		if(State != ST_LEDGECLIMB) PlayerWallCollision();
+		PlayerWallCollision();
 	
 		//Player handle shields
 		PlayerShieldList();
@@ -37,10 +34,13 @@
 		
 		//Collision stuff when player is in air
 		if(!OnObject) PlayerCollisionAirborn();
-
+		
+		//Player hitbox
+		PlayerHitbox();
+		
 		//Handle ground collision
 		if(Ground && !OnObject) PlayerCollisionGround();
-		
+
 		//Get ground angle
 		if(Ground && !OnObject || CeilingSide != 0) GroundAngle = GetAngle();
 		

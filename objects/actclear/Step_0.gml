@@ -56,16 +56,18 @@
 			PlaySound(ScoreAdd);
 		
 		//Skip the count down
-		if(Input.ActionPress && TimeBonus > 0 || Input.ActionPress && RingBonus > 0){
+		if(Input.ActionPress && TimeBonus > 0){
 			//Time bonus skip
 			Game.Score += TimeBonus; 
 			TotalBonus += TimeBonus;
 			TimeBonus -= TimeBonus; 
-			
+		}
+		
+		if(Input.ActionPress && RingBonus > 0){
 			//Ring bonus skip
 			Game.Score += RingBonus; 
 			TotalBonus += RingBonus;
-			TimeBonus -= RingBonus; 
+			RingBonus -= RingBonus; 
 		}
 		
 		//No more count down, switch to ending events

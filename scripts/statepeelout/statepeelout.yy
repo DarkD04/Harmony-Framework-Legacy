@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "States",
-    "path": "folders/Scripts/Player Scripts/States.yy",
+    "name": "Sonic",
+    "path": "folders/Scripts/Player Scripts/States/Sonic.yy",
   },
   "resourceVersion": "1.0",
   "name": "StatePeelOut",

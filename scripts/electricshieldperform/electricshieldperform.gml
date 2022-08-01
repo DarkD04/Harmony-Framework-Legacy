@@ -13,6 +13,12 @@ function ElectricShieldPerform(){
 			depth = Player.depth - 10;
 			if(image_index >= 15) depth = Player.depth + 10;
 		}
+		//No shield underwater >:(
+		if(Underwater) Shield = S_NONE;
+		
+		//Stop executing when not sonic
+		if(Character != CHAR_SONIC) exit;
+		
 		//Double jump!
 		if(Jumping && !Ground && ShieldState = 0 && Input.ActionPress){
 			JumpFlag = false;

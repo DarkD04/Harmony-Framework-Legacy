@@ -2,6 +2,9 @@
 	//Game macro
 	#macro Game global
 	
+	//Character
+	Game.Character = CHAR_SONIC;
+	
 	// Screen values
 	Game.ScreenWidth  = 400;
 	Game.ScreenHeight = 224;
