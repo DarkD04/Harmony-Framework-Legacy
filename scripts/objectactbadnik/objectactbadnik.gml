@@ -1,6 +1,6 @@
 function ObjectActBadnik(){
 	//When player collides while attacking
-	if(PlayerCheckObject(C_MAIN) && Player.Attacking){
+	if(PlayerCheckObject(C_MAIN) && Player.Attacking || PlayerCheckObject(C_MAIN) && Player.Invincible){
 		//Handling animals
 		var Animal = instance_create_depth(x, y, depth, Animals);
 		

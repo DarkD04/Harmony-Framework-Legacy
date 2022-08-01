@@ -7,7 +7,7 @@
 	if(!Shattered)Destructable(32, 32);
 	
 	//Collect the ring
-	if(PlayerCheckObject(C_MAIN) && Player.InvincibleTimer <= 100){
+	if(PlayerCheckObject(C_MAIN) && Player.InvincibleTimer <= 100 || PlayerCheckObject(C_MAIN) && Player.Invincible){
 		Game.Rings += 1;
 		CreateEffect(x, y, sprRingSpark, 0.2);
 		PlaySound(Rings);

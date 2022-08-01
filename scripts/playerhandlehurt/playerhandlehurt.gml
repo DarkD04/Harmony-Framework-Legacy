@@ -20,26 +20,26 @@ function PlayerHandleHurt(){
 		PlaySound(Knockout);
 		InvincibleTimer = 120;
 		XSpeed = -2*Direction;
-		if(!ObjectCollision(-WallRadiusW, -HitboxH-8, WallRadiusW, 0)) YSpeed = -4;
+		if(!Underwater) YSpeed = -4; else YSpeed = -4/2;
 		Ground = false;
 		State = ST_HURT;
 		Shield = S_NONE;
 	}
 	
 	//Hurt with rings
-	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Game.Rings >= 1 && Shield = S_NONE && InvincibleTimer = 0){
+	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Hurt != H_DROWN  && Game.Rings >= 1 && Shield = S_NONE && InvincibleTimer = 0){
 		PlaySound(Ringloss);
 		CreateRingloss(Game.Rings);
 		InvincibleTimer = 120;
 		XSpeed = -2*Direction;
-		if(!ObjectCollision(-WallRadiusW, -HitboxH-8, WallRadiusW, 0)) YSpeed = -4;
+		if(!Underwater) YSpeed = -4; else YSpeed = -4/2;
 		Ground = false;
 		State = ST_HURT;
 		Game.Rings = 0;
 	}
 	
 	//Die when theres no rings
-	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Game.Rings = 0 && Shield = S_NONE && InvincibleTimer = 0 || Hurt != H_DIE && y > Camera.DestinationBottom + 32){
+	if(Hurt = H_KNOCKOUT && Hurt != H_DIE && Hurt != H_DROWN && Game.Rings = 0 && Shield = S_NONE && InvincibleTimer = 0 || Hurt != H_DIE && Hurt != H_DROWN && y > Camera.DestinationBottom + 32){
 		PlaySound(Knockout);
 		GroundSpeed = 0;
 		XSpeed = 0;
@@ -51,7 +51,7 @@ function PlayerHandleHurt(){
 	//Handle death
 	if(Hurt = H_DIE){
 		//Change player layer
-		depth = layer_get_depth("Utilities")-10;
+		depth = layer_get_depth("Utilities")+10;
 		
 		//Change camera mode
 		Camera.Mode = -1;
@@ -66,6 +66,30 @@ function PlayerHandleHurt(){
 		
 		//Change animation
 		PlayerAnimation(ANIM_DIE, 1);
+	}
+	
+	//Handle death
+	if(Hurt = H_DROWN){
+		//No music
+		MusicObject.Fade = MusicFadeOut;
+		MusicObject.FadeSpeed = 100;
+			
+		//Change player layer
+		depth = layer_get_depth("Utilities")+10;
+		
+		//Change camera mode
+		Camera.Mode = -1;
+		
+		//Change flags
+		CanMove = false;
+		CanCollide = false;
+		
+		//Add gravity
+		y += YSpeed;
+		YSpeed += Gravity;
+		
+		//Change animation
+		PlayerAnimation(ANIM_DROWN, 1);
 	}
 	
 	//Try to restart the room when dying

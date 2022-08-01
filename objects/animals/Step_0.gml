@@ -1,14 +1,23 @@
 /// @description Scripts
+	//Change frame index
+	if(!Triggered) image_index = 0; else image_index = max(image_index, 1);
+	
 	//Change animation speed
 	image_speed = 0.4;
+	
+	//Subtract delay timer
+	Delay = max(Delay-1, 0);
+	
+	//Stop executing if theres delay
+	if(Delay > 0) exit;
+	
+	//Change depth
+	depth = layer_get_depth("Collision");
 	
 	//Update position
 	x += Acceleration[AnimalType]*Direction;
 	y += YSpeed;
 	YSpeed += Gravity;
-	
-	//Change frame index
-	if(!Triggered) image_index = 0; else image_index = max(image_index, 1);
 	
 	//Handle collision
 	while(ObjectCheckTerrainPoint(0, 8) && YSpeed > 0){

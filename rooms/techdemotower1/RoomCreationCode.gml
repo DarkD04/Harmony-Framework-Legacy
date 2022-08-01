@@ -13,5 +13,5 @@
 		NextLevel = TechdemoTower1;
 		
 		//What kind of animals will appear in this level
-		AnimalArray = [A_FLICKY, A_PECKY, A_ROCKY];
+		AnimalArray = [A_FLICKY, A_CUCKY, A_PECKY];
 	}

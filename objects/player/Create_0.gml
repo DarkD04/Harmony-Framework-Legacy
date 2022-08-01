@@ -17,6 +17,7 @@
 	Gravity = 0.21875
 	SlopeInfluence = 0.125
 	JumpSpeed = 6.5;
+	Air = 20;
 	
 	//Flags
 	Ground = true;
@@ -38,7 +39,6 @@
 	HitboxH = 19;
 	WallRadiusW = 10;
 	WallRadiusH = 0;
-	PrevHitboxH = 0;
 	
 	//Angle sensors
 	PointX[0] = x;
@@ -69,6 +69,7 @@
 	
 	//Other
 	InvincibleTimer = 0;
+	Invincible = false;
 	ControlLock = 0;
 	PlaneIndex = 0;
 	Direction = 1;

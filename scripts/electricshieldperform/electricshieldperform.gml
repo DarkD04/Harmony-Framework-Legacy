@@ -17,7 +17,10 @@ function ElectricShieldPerform(){
 		if(Underwater) Shield = S_NONE;
 		
 		//Stop executing when not sonic
-		if(Character != CHAR_SONIC) exit;
+		if(Character != CHAR_SONIC || Invincible){
+			ShieldState = 0;
+			exit;
+		}
 		
 		//Double jump!
 		if(Jumping && !Ground && ShieldState = 0 && Input.ActionPress){

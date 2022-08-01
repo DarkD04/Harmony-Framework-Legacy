@@ -16,8 +16,14 @@
 		//Clamp fade offset
 		FadeOffset = clamp(FadeOffset, 0, 1);
 		
+		//Resume the channels
+		audio_resume_sound(Playing[i]);
+		
+		//Pause BGM when jingle is playing
+		if(Playing[Jingle] != noone)
+			audio_pause_sound(Playing[BGM]);
+		
+		//Stop everything when drown jingle is playing
+		if(audio_is_playing(DrownJingle))
+			audio_pause_sound(Playing[i]);
 	}
-
-	//Pause BGM when jingle is playing
-	if(Playing[Jingle] != noone)
-		audio_pause_sound(Playing[BGM]); else audio_resume_sound(Playing[BGM]);

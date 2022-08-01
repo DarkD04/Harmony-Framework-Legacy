@@ -18,6 +18,7 @@ function PlayerAnimationList(){
 			ANIM_DROWN = sprSonicDrown;
 			ANIM_SPRING = sprSonicSpring;
 			ANIM_VICTORY = sprSonicVictory;
+			ANIM_BREATHE = sprSonicBreathe;
 		break;
 		case CHAR_TAILS:
 			ANIM_STAND = sprTailsIdle;
@@ -41,6 +42,7 @@ function PlayerAnimationList(){
 			ANIM_TIRED = sprTailsTired;
 			ANIM_SWIM = sprTailsSwim;
 			ANIM_SWIM_TIRED = sprTailsSwimTired;
+			ANIM_BREATHE = sprTailsBreathe;
 		break;
 		case CHAR_KNUX:
 			ANIM_STAND = sprKnuxIdle;
@@ -67,6 +69,7 @@ function PlayerAnimationList(){
 			ANIM_LANDED = sprKnuxLand;
 			ANIM_SLIDE = sprKnuxSlide;
 			ANIM_GETUP = sprKnuxGetUp;
+			ANIM_BREATHE = sprKnuxBreathe;
 		break;
 	}
 }

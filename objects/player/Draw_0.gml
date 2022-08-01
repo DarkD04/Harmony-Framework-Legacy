@@ -1,7 +1,7 @@
 /// @description Render the player
 	
 	//Draw the player
-	if(State = ST_HURT || InvincibleTimer mod 12 >= 6 || InvincibleTimer = 0){
+	if(State = ST_HURT || InvincibleTimer mod 12 >= 6 || InvincibleTimer = 0 || Invincible){
 		//Draw after images
 		for(var i = 0; i < 3; i++){
 			if(SpeedTimer >= 1 && (SpeedTimer+i) mod 8 >= 4){

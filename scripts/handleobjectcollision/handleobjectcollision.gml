@@ -8,7 +8,8 @@ function HandleObjectCollision(){
 		var CenterX = ObjectID.bbox_left + (ObjectID.bbox_right - ObjectID.bbox_left)/2;
 		var CenterY = ObjectID.bbox_top + (ObjectID.bbox_bottom - ObjectID.bbox_top)/2;
 		
-		if(abs(CenterX - x) > abs(CenterY - y - 4)){
+		if(x >= CenterX && abs(CenterX - x + WallRadiusW) > abs(CenterY - y - 4) ||
+		x < CenterX && abs(CenterX - x - WallRadiusW) > abs(CenterY - y - 4)){
 			//Left Wall
 			if(GroundSpeed >= -2){
 				while(ObjectCollision(0, -HitboxH+3, WallRadiusW, HitboxH-3)){
@@ -24,13 +25,13 @@ function HandleObjectCollision(){
 			}
 			
 			//Wall stopper
-			if(ObjectCollision(0, -HitboxH+3, WallRadiusW+1, HitboxH-3) && GroundSpeed > 0){
+			if(ObjectCollision(0, -HitboxH+3, WallRadiusW+1, HitboxH-3) && GroundSpeed > 0 && WallStopper){
 				GroundSpeed = 0;
 				XSpeed = 0;
 				GlideSpeed = 2;
 			}
 			
-			if(ObjectCollision(0, -HitboxH+3, -WallRadiusW-1, HitboxH-3) && GroundSpeed < 0){
+			if(ObjectCollision(0, -HitboxH+3, -WallRadiusW-1, HitboxH-3) && GroundSpeed < 0 && WallStopper){
 				GroundSpeed = 0;
 				XSpeed = 0;
 				GlideSpeed = 2;

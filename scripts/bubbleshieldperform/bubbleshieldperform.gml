@@ -15,8 +15,14 @@ function BubbleShieldPerform(){
 			BubbleShield.image_speed = 1.2;
 		}
 		
+		//Reset air timer
+		Air = 0;
+		
 		//Stop executing when not sonic
-		if(Character != CHAR_SONIC) exit;
+		if(Character != CHAR_SONIC || Invincible){
+			ShieldState = 0;
+			exit;
+		}
 		
 		//Trigger the fire shield
 		if(ShieldState = 0 && Input.ActionPress && Jumping && LandTimer = 0){
@@ -41,8 +47,13 @@ function BubbleShieldPerform(){
 				JumpFlag = false;
 				GroundAngle = GetAngle();
 				PlaySound(BubbleBounce);
-				XSpeed -= 7.5 * dsin(GroundAngle)
-				YSpeed -= 7.5 * dcos(GroundAngle)
+				if(!Underwater){
+					XSpeed -= (7.5 * dsin(GroundAngle));
+					YSpeed -= (7.5 * dcos(GroundAngle));
+				}else{
+					XSpeed -= (7.5/2) * dsin(GroundAngle);
+					YSpeed -= (7.5/2) * dcos(GroundAngle);
+				}
 				ShieldState = 0;
 				PlayerCollisionGround();
 			}

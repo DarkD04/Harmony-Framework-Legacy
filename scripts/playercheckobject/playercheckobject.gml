@@ -20,7 +20,7 @@ function PlayerCheckObject(Type){
 		switch(Type){
 			case C_MAIN: Result = collision_rectangle(floor(x)-WallRadiusW, floor(y)-HitboxH, floor(x)+WallRadiusW, floor(y)+HitboxH, Self, true, true); break;
 			case C_LEFT: Result = collision_rectangle(floor(x)-WallRadiusW-1, floor(y)-HitboxH, floor(x), floor(y)+HitboxH, Self, true, true); break;
-			case C_RIGHT: Result = collision_rectangle(floor(x), floor(y)-HitboxH, floor(x)+WallRadiusW+1, floor(y)+HitboxH, Self, true, true); break;
+			case C_RIGHT: Result = collision_rectangle(floor(x), floor(y)-HitboxH, floor(x)+WallRadiusW+2, floor(y)+HitboxH, Self, true, true); break;
 			case C_TOP: Result = collision_rectangle(floor(x)-WallRadiusW, floor(y)-HitboxH-2, floor(x)+WallRadiusW, floor(y), Self, true, true); break;
 			case C_BOTTOM: Result = collision_rectangle(floor(x)-WallRadiusW, floor(y), floor(x)+WallRadiusW, floor(y)+HitboxH+2, Self, true, true); break;
 			case C_BOTTOM_BIG: Result = collision_rectangle(floor(x)-WallRadiusW, floor(y), floor(x)+WallRadiusW, floor(y)+HitboxH+16, Self, true, true); break;

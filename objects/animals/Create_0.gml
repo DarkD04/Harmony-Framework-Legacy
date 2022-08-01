@@ -26,3 +26,4 @@
 	Gravity = 0.21875;
 	Direction = 0;
 	Triggered = false;
+	Delay = 0;

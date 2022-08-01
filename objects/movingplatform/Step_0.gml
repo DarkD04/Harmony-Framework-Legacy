@@ -32,3 +32,13 @@
 		Player.x += floor(DifferenceX);	
 		Player.y += floor(DifferenceY);	
 	}
+	
+	//Attach objects to the platform
+	var Platform = self;
+	
+	with(SpringVertical){
+		if(collision_rectangle(floor(x)-Platform.AttachRange, floor(y)-Platform.AttachRange, floor(x)+Platform.AttachRange, floor(y)+Platform.AttachRange, Platform, false, false)){
+			x += floor(DifferenceX);	
+			y += floor(DifferenceY);	
+		}
+	}

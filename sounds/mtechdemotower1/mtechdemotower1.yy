@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mtechdemotower1.ogg",
-  "duration": 113.77778,
+  "duration": 96.0,
   "parent": {
     "name": "Stage",
     "path": "folders/Music/Stage.yy",

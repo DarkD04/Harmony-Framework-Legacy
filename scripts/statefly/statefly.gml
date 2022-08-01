@@ -3,7 +3,6 @@ function StateFly(){
 		Jumping = false;
 		TailsTimer = 480;
 		State = ST_FLY;
-		YSpeed = max(YSpeed, -2);
 	}
 	
 	if(State = ST_FLY){
@@ -14,7 +13,7 @@ function StateFly(){
 			if(!Underwater) PlayerAnimation(ANIM_TIRED, 2); else PlayerAnimation(ANIM_SWIM_TIRED, 2);
 		}
 		//Speed cap
-		YSpeed = max(YSpeed, -4);
+		if(YSpeed < -2) YSpeed += 0.125;
 		
 		//Change flags
 		InputInterrupt = false;
@@ -31,10 +30,15 @@ function StateFly(){
 		
 		//Play sound
 		if(TailsTimer > 0){
-			if(!audio_is_playing(TailsFly)) PlaySound(TailsFly);
+			if(!audio_is_playing(TailsFly) && !Underwater) PlaySound(TailsFly);
 		}else{
-			if(!audio_is_playing(TailsTired)) PlaySound(TailsTired);
+			if(!audio_is_playing(TailsTired) && !Underwater) PlaySound(TailsTired);
 			audio_stop_sound(TailsFly);
+		}
+		
+		if(Underwater){
+			audio_stop_sound(TailsFly);
+			audio_stop_sound(TailsTired);
 		}
 		
 		//Reset the state when grounded
