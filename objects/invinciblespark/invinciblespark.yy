@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Harinezumi Framework 2.0",
-    "path": "Harinezumi Framework 2.0.yyp",
+    "name": "Player",
+    "path": "folders/Objects/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "InvincibleSpark",

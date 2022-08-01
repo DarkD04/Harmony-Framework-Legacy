@@ -1,1 +1,0 @@
-PlayMusic(NoWay, BGM, 4.293, 14.032);

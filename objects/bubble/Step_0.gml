@@ -21,6 +21,7 @@
 	//Suck it!
 	if(PlayerCheckObject(C_MAIN) && AniSubImage >= image_number-1){
 		with(Player){
+			Air = 0;
 			XSpeed = 0;
 			YSpeed = 0;
 			State = ST_NONE;

@@ -43,7 +43,7 @@ function PlayerHandleWater(){
 		if(Air < 20*60) audio_stop_sound(DrownJingle);
 		
 		//Drown!
-		if(Air = 32*60){
+		if(Air > 32*60 && Hurt != H_DROWN){
 			PlaySound(Drown);
 			Hurt = H_DROWN;
 		}

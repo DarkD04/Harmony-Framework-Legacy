@@ -105,8 +105,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Harinezumi Framework 2.0",
-    "path": "Harinezumi Framework 2.0.yyp",
+    "name": "Effects",
+    "path": "folders/Effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprInvSpark",

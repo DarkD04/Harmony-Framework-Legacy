@@ -4,7 +4,6 @@ function PlayerCollisionAirborn(){
 		if(CheckTerrain(-HitboxW, HitboxH) && YSpeed >= 0 || CheckTerrain(HitboxW, HitboxH) && YSpeed >= 0){
 			if(CanLand) Jumping = false
 			Roll = false;
-			PlayerHitbox();
 			Ground = true;
 			Land = true;
 			LandTimer = 4;
@@ -20,7 +19,7 @@ function PlayerCollisionAirborn(){
 		}
 	}
 	//Ceiling landing code
-	if(CheckTerrain(-HitboxW, -HitboxH) && !CheckTerrain(HitboxW, -HitboxH) && YSpeed < -2 && !Ground || CheckTerrain(HitboxW, -HitboxH) && !CheckTerrain(-HitboxW, -HitboxH) && YSpeed < -2 && !Ground){
+	if(CheckTerrain(-HitboxW, -HitboxH) && !CheckTerrain(HitboxW, -HitboxH) && YSpeed < -3 && !Ground || CheckTerrain(HitboxW, -HitboxH) && !CheckTerrain(-HitboxW, -HitboxH) && YSpeed < -3 && !Ground){
 		CeilingSide = 1;	
 	}
 	

@@ -42,7 +42,8 @@ function FireShieldPerform(){
 			FireshieldBack.visible = false;	
 			
 			//Turn shield direction
-			if(XSpeed != 0)FireshieldFront.image_xscale = sign(XSpeed);
+			if(GroundSpeed != 0) FireshieldFront.image_xscale = sign(GroundSpeed);
+			if(GroundSpeed = 0) FireshieldFront.image_xscale = Direction;
 			
 			//Change front shield sprite into dashing
 			FireshieldFront.sprite_index = sprFireshieldDash;

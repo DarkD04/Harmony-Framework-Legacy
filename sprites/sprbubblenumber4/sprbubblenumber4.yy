@@ -93,8 +93,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Objects/Stage/Common/Sprites.yy",
+    "name": "Effects",
+    "path": "folders/Effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBubbleNumber4",
