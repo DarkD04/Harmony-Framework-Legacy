@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Checkpoint",
-    "path": "folders/Objects/Stage/Common/Sprites/Checkpoint.yy",
+    "path": "folders/Sprites/Stage/Common Objects/Checkpoint.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprCheckpointBallActive",

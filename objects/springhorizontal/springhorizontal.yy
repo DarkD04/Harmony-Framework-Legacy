@@ -34,10 +34,7 @@
         "\"Red\"",
       ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"SpringType","tags":[],"resourceType":"GMObjectProperty",},
   ],
-  "overriddenProperties": [
-    {"propertyId":{"name":"CanLand","path":"objects/CollisionObject/CollisionObject.yy",},"objectId":{"name":"CollisionObject","path":"objects/CollisionObject/CollisionObject.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"WallStopper","path":"objects/CollisionObject/CollisionObject.yy",},"objectId":{"name":"CollisionObject","path":"objects/CollisionObject/CollisionObject.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Common",
     "path": "folders/Objects/Stage/Common.yy",

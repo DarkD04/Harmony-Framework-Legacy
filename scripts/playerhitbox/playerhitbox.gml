@@ -2,7 +2,7 @@ function PlayerHitbox(){
 		//Change wall radius y
 	if(GroundAngle = 0 && Ground) WallRadiusH = 8 else WallRadiusH = 0;
 	
-	if(!Jumping && !Roll)
+	if(!Jumping && !Roll && State != ST_GLIDE)
 		Camera.RollingOffset = 0;
 		
 	//Radius changes

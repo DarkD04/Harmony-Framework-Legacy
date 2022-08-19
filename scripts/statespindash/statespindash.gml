@@ -34,6 +34,7 @@ function StateSpindash(){
 		
 		//Release the spindash
 		if(!Input.Down){
+			PlayerAnimation(ANIM_ROLL, 1);
 			audio_stop_sound(Spindash);
 			PlaySound(Release);
 			Camera.HorizontalLag = 20-SpindashRev;

@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Springs",
-    "path": "folders/Objects/Stage/Common/Sprites/Springs.yy",
+    "path": "folders/Sprites/Stage/Common Objects/Springs.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprRedSpringDiagonal",

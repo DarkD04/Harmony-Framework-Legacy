@@ -5,27 +5,28 @@
 
 	//Uniform for the parallax
 	uniform vec2 Position;
-	uniform bool  LineScroll;
-	uniform vec2 OffsetX;
+	uniform bool LineScroll;
+	uniform float OffsetX;
 	uniform float Width;
-	uniform float Height;
 	uniform float LineGaps;
 	uniform float YSteps;
 	uniform float TexelWidth;
 	uniform float YScale;
 	
 	//Variables
+	vec2 Diff;
 	float Result;
+	float LineCalc;
 
 	void main(){		
-		float DiffX  = (v_vPosition.x - Position.x);
-		float DiffY  = (v_vPosition.y - Position.y);
-	
-		//Check if linescroll flag is on
-		if(!LineScroll)  Result = mod(OffsetX.x + DiffX, Width) - DiffX;
+		Diff  = (v_vPosition - Position);
 		
+		//Calculate line scrolling
+		if (LineScroll) LineCalc =  1. + ceil(Diff.y / LineGaps / YScale) * YSteps; else LineCalc = 1.0;
 		
-		if(LineScroll)  Result = mod(floor(OffsetX.x * (1.0 + ceil((DiffY - 1.) / LineGaps / YScale) * YSteps)) + DiffX, Width) - DiffX;
+		//Scroll the background
+		Result = mod(floor(OffsetX * LineCalc) + Diff.x, Width) - Diff.x;
 		
+		//Final
 		gl_FragColor = v_vColour * texture2D( gm_BaseTexture, vec2(v_vTexcoord.x + Result * TexelWidth, v_vTexcoord.y));
 	}

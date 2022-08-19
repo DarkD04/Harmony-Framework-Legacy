@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Rings",
-    "path": "folders/Objects/Stage/Common/Sprites/Rings.yy",
+    "path": "folders/Sprites/Stage/Common Objects/Rings.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprRingSpark",

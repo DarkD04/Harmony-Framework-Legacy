@@ -194,7 +194,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Objects/Player/Shield/Sprites.yy",
+    "path": "folders/Sprites/Player/Shield/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBubbleShield",

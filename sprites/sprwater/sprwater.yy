@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Effects",
-    "path": "folders/Effects.yy",
+    "name": "Water",
+    "path": "folders/Sprites/Stage/Common Objects/Water.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprWater",

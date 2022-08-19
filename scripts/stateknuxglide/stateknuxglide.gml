@@ -44,18 +44,17 @@ function StateKnuxGlide(){
 		}
 		
 		//Change the gravity
-		
 		if (YSpeed < 0.5) YSpeed += 0.125;
 		if (YSpeed > 0.5) YSpeed -= 0.125;
-		
-		//Stop gliding on steep slopes
-		if(Ground && GroundAngle >= 45 && GroundAngle <= 315){
-			State = ST_NONE;
-		}
 		
 		//Slide when not on ground
 		if(Ground){
 			State = ST_KNUXSLIDE;
+		}
+		
+		//Stop gliding on steep slopes
+		if(Ground && GroundAngle >= 45 && GroundAngle <= 315){
+			State = ST_NONE;
 		}
 	}
 }

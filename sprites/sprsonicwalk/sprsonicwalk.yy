@@ -90,7 +90,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sonic",
-    "path": "folders/Objects/Player/Sonic.yy",
+    "path": "folders/Sprites/Player/Sonic.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSonicWalk",

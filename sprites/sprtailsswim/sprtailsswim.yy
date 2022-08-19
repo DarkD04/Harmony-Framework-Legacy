@@ -86,7 +86,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Tails",
-    "path": "folders/Objects/Player/Tails.yy",
+    "path": "folders/Sprites/Player/Tails.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprTailsSwim",

@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Effects",
-    "path": "folders/Effects.yy",
+    "path": "folders/Sprites/Effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSkidDust",

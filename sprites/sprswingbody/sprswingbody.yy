@@ -94,7 +94,7 @@
   },
   "parent": {
     "name": "Editor",
-    "path": "folders/Objects/Stage/Common/Sprites/Editor.yy",
+    "path": "folders/Sprites/Stage/Common Objects/Editor.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSwingBody",

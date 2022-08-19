@@ -17,8 +17,8 @@
   "width": 16,
   "height": 16,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Effects",
+    "path": "texturegroups/Effects",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Objects/Stage/Common/Sprites.yy",
+    "name": "Water",
+    "path": "folders/Sprites/Stage/Common Objects/Water.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBubbleGenerator",

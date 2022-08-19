@@ -10,7 +10,7 @@
 	if(!Triggered) image_index = 0;
 	
 	//Trigger the spring(Bottom)
-	if(PlayerCheckObject(C_BOTTOM) && !Triggered && image_yscale > 0){
+	if(PlayerCheckObject(C_BOTTOM) && Player.YSpeed >= 0 && !Triggered && image_yscale > 0){
 		Player.Roll = false;
 		Player.Jumping = false;
 		Player.State = ST_SPRING;
@@ -23,10 +23,10 @@
 	
 	//Trigger the spring(Top)
 	if(PlayerCheckObject(C_TOP) && !Triggered && image_yscale < 0){
-		Player.Roll = false;
+		/*Player.Roll = false;
 		Player.Jumping = false;
 		Player.State = ST_SPRING;
-		Player.Ground = false;
+		Player.Ground = false;*/
 		Player.YSpeed = SpringPower;
 		Triggered = true;
 		image_index = 1;

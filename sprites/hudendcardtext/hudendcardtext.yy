@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "End Stage",
-    "path": "folders/Objects/Stage/Common/Sprites/End Stage.yy",
+    "path": "folders/Sprites/Stage/Common Objects/End Stage.yy",
   },
   "resourceVersion": "1.0",
   "name": "hudEndCardText",

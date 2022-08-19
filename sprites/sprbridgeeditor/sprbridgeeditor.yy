@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Objects/Stage/Techdemo Tower/Sprites.yy",
+    "name": "Techdemo Tower",
+    "path": "folders/Sprites/Stage/Techdemo Tower.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBridgeEditor",

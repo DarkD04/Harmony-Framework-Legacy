@@ -86,7 +86,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Tail",
-    "path": "folders/Objects/Player/Tails/Tail.yy",
+    "path": "folders/Sprites/Player/Tails/Tail.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprTailsD0",

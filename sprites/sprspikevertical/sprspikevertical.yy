@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Spikes",
-    "path": "folders/Objects/Stage/Common/Sprites/Spikes.yy",
+    "path": "folders/Sprites/Stage/Common Objects/Spikes.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSpikeVertical",

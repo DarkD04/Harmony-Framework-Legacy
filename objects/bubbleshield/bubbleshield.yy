@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shield",
-    "path": "folders/Objects/Player/Shield.yy",
+    "path": "folders/Sprites/Player/Shield.yy",
   },
   "resourceVersion": "1.0",
   "name": "BubbleShield",

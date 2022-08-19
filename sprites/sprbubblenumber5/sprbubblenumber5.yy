@@ -17,8 +17,8 @@
   "width": 16,
   "height": 24,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Effects",
+    "path": "texturegroups/Effects",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -94,7 +94,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Effects",
-    "path": "folders/Effects.yy",
+    "path": "folders/Sprites/Effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBubbleNumber5",

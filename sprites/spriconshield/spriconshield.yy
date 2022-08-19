@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Monitor",
-    "path": "folders/Objects/Stage/Common/Sprites/Monitor.yy",
+    "path": "folders/Sprites/Stage/Common Objects/Monitor.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprIconShield",

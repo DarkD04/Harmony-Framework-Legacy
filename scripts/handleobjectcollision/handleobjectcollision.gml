@@ -3,13 +3,11 @@ function HandleObjectCollision(){
 	
 	var ObjectID = collision_rectangle(floor(x)-WallRadiusW, floor(y)-HitboxH, floor(x)+WallRadiusW, floor(y)+HitboxH, CollisionObject, false, false)
 
-	//(ObjectID.x - PlayerX) > abs(ObjectID.y - PlayerY - 4)
 	if(ObjectID){
 		var CenterX = ObjectID.bbox_left + (ObjectID.bbox_right - ObjectID.bbox_left)/2;
 		var CenterY = ObjectID.bbox_top + (ObjectID.bbox_bottom - ObjectID.bbox_top)/2;
 		
-		if(x >= CenterX && abs(CenterX - x + WallRadiusW) > abs(CenterY - y - 4) ||
-		x < CenterX && abs(CenterX - x - WallRadiusW) > abs(CenterY - y - 4)){
+		if(abs(CenterX - x) > abs(CenterY - y - 4)){
 			//Left Wall
 			if(GroundSpeed >= -2){
 				while(ObjectCollision(0, -HitboxH+3, WallRadiusW, HitboxH-3)){
@@ -40,18 +38,19 @@ function HandleObjectCollision(){
 	}
 	
 	//Ceiling collision
-	while(ObjectCollision(-WallRadiusW, -HitboxH+min(YSpeed/3, 0), WallRadiusW, 0) && YSpeed < 0){
+	while(ObjectCollision(-WallRadiusW, -HitboxH, WallRadiusW, -HitboxH+1) && YSpeed < 0){
 		y+=1;
 		YSpeed = 0;
 		TailsGravity = 1;
 	}
 	
 	//Landing
-	if(ObjectCollision(-WallRadiusW, 0, WallRadiusW, HitboxH+max(YSpeed/2, 0), true) && !OnObject && YSpeed >= 0 && State != ST_CLIMB && State != ST_LEDGECLIMB){
+	if(ObjectCollision(-WallRadiusW, HitboxH-1, WallRadiusW, HitboxH, true) && !OnObject && YSpeed >= 0 && State != ST_CLIMB && State != ST_LEDGECLIMB){
 		if(CanLand)Jumping = false
 		Roll = false;
 		Ground = true;
 		Land = true;
+		PlayerHitbox();
 		LandTimer = 4;
 		OnObject = true;
 	}

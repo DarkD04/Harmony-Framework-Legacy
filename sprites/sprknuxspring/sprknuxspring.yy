@@ -86,7 +86,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Knuckles",
-    "path": "folders/Objects/Player/Knuckles.yy",
+    "path": "folders/Sprites/Player/Knuckles.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprKnuxSpring",

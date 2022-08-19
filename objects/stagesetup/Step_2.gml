@@ -9,7 +9,7 @@
 	sh = Game.ScreenHeight;
 	
 	//Activate the object when its onscreen
-	instance_activate_region(cx-64, cy-64, sw+64, sh+64, true);
+	instance_activate_region(cx-64, cy-64, sw+64*2, sh+64*2, true);
 	instance_activate_region(Player.x-64, Player.y-64, 128, 128, true);
 	
 	//Timers

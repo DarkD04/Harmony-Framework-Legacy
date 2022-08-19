@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Animals",
-    "path": "folders/Objects/Stage/Common/Sprites/Animals.yy",
+    "path": "folders/Sprites/Stage/Common Objects/Animals.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprRicky",
