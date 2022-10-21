@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "CollisionMask00",
   "spriteId": {
     "name": "sprCollisionMask00",
     "path": "sprites/sprCollisionMask00/sprCollisionMask00.yy",
@@ -25,7 +28,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,8 +36,4 @@
     "name": "Object",
     "path": "folders/Scenes/Collision/Object.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "CollisionMask00",
-  "tags": [],
-  "resourceType": "GMObject",
 }

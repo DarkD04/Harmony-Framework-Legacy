@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "SensorCollision",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "Functions",
     "path": "folders/Scripts/Player Scripts/Functions.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SensorCollision",
-  "tags": [],
-  "resourceType": "GMScript",
 }

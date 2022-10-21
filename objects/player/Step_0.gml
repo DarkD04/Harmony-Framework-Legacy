@@ -15,7 +15,7 @@
 	}else instance_destroy(PlayerTails);
 	
 	//Steps
-	Steps = 1 + abs(round(XSpeed/16)) + abs(round(YSpeed/16)) + (Ground ? 0 : 1);
+	Steps = 1 + abs(round(XSpeed/13)) + abs(round(YSpeed/13)) + (Ground ? 0 : 1);
 	
 	repeat(Steps){
 		//This is where player moves

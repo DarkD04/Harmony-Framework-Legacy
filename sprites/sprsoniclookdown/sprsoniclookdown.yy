@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprSonicLookDown",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 59,
   "height": 59,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d8ebe865-16a3-463d-8abc-697e600cfe89","path":"sprites/sprSonicLookDown/sprSonicLookDown.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d8ebe865-16a3-463d-8abc-697e600cfe89","path":"sprites/sprSonicLookDown/sprSonicLookDown.yy",},"LayerId":{"name":"3148a490-e1c6-439e-b1b4-d2d3a52bb053","path":"sprites/sprSonicLookDown/sprSonicLookDown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprSonicLookDown","path":"sprites/sprSonicLookDown/sprSonicLookDown.yy",},"resourceVersion":"1.0","name":"d8ebe865-16a3-463d-8abc-697e600cfe89","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d8ebe865-16a3-463d-8abc-697e600cfe89",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprSonicLookDown","path":"sprites/sprSonicLookDown/sprSonicLookDown.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprSonicLookDown",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -37,12 +41,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c44d6b25-8c20-477a-9aa0-7351969d9fbb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8ebe865-16a3-463d-8abc-697e600cfe89","path":"sprites/sprSonicLookDown/sprSonicLookDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c44d6b25-8c20-477a-9aa0-7351969d9fbb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8ebe865-16a3-463d-8abc-697e600cfe89","path":"sprites/sprSonicLookDown/sprSonicLookDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 31,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprSonicLookDown","path":"sprites/sprSonicLookDown/sprSonicLookDown.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprSonicLookDown",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3148a490-e1c6-439e-b1b4-d2d3a52bb053","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3148a490-e1c6-439e-b1b4-d2d3a52bb053","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sonic",
     "path": "folders/Sprites/Player/Sonic.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprSonicLookDown",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

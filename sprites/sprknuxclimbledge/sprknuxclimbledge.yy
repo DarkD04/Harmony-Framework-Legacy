@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprKnuxClimbLedge",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 128,
   "height": 128,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b998cfac-a70d-431f-8f38-c3ece2beb321","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b998cfac-a70d-431f-8f38-c3ece2beb321","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"LayerId":{"name":"800eeea5-359d-476e-a7bd-6ad110faceca","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprKnuxClimbLedge","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","name":"b998cfac-a70d-431f-8f38-c3ece2beb321","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d1a90d35-fd82-45bd-af29-aa0a63a09cfc","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d1a90d35-fd82-45bd-af29-aa0a63a09cfc","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"LayerId":{"name":"800eeea5-359d-476e-a7bd-6ad110faceca","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprKnuxClimbLedge","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","name":"d1a90d35-fd82-45bd-af29-aa0a63a09cfc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"153e344e-4cc7-447b-a009-36d7826781e8","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"153e344e-4cc7-447b-a009-36d7826781e8","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"LayerId":{"name":"800eeea5-359d-476e-a7bd-6ad110faceca","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprKnuxClimbLedge","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","name":"153e344e-4cc7-447b-a009-36d7826781e8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e33ce365-cd58-4fc6-99c0-6357507f5586","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e33ce365-cd58-4fc6-99c0-6357507f5586","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"LayerId":{"name":"800eeea5-359d-476e-a7bd-6ad110faceca","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprKnuxClimbLedge","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","name":"e33ce365-cd58-4fc6-99c0-6357507f5586","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b998cfac-a70d-431f-8f38-c3ece2beb321",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d1a90d35-fd82-45bd-af29-aa0a63a09cfc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"153e344e-4cc7-447b-a009-36d7826781e8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e33ce365-cd58-4fc6-99c0-6357507f5586",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprKnuxClimbLedge","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprKnuxClimbLedge",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,15 +44,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bdd287b0-2ef6-4d39-9034-c490de7806d4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b998cfac-a70d-431f-8f38-c3ece2beb321","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"1778bf32-d0f5-4dd8-a23f-027d383d6a62","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d1a90d35-fd82-45bd-af29-aa0a63a09cfc","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f82a9525-2fc9-4de3-8e9b-5764caa44a56","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"153e344e-4cc7-447b-a009-36d7826781e8","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0ca1dbdc-101f-458b-b859-75b382266e7e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e33ce365-cd58-4fc6-99c0-6357507f5586","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"bdd287b0-2ef6-4d39-9034-c490de7806d4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b998cfac-a70d-431f-8f38-c3ece2beb321","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1778bf32-d0f5-4dd8-a23f-027d383d6a62","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d1a90d35-fd82-45bd-af29-aa0a63a09cfc","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f82a9525-2fc9-4de3-8e9b-5764caa44a56","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"153e344e-4cc7-447b-a009-36d7826781e8","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0ca1dbdc-101f-458b-b859-75b382266e7e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e33ce365-cd58-4fc6-99c0-6357507f5586","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprKnuxClimbLedge","path":"sprites/sprKnuxClimbLedge/sprKnuxClimbLedge.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprKnuxClimbLedge",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"800eeea5-359d-476e-a7bd-6ad110faceca","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"800eeea5-359d-476e-a7bd-6ad110faceca","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Knuckles",
     "path": "folders/Sprites/Player/Knuckles.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprKnuxClimbLedge",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

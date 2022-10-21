@@ -12,7 +12,6 @@ function PlayerPeformJump(){
 		Jumping = true;
 		Roll = false;
 		JumpFlag = true;
-		PlayerHitbox();
 		Ground = false;
 		Land = false;
 	}

@@ -25,7 +25,7 @@ function BubbleShieldPerform(){
 		}
 		
 		//Trigger the fire shield
-		if(ShieldState = 0 && Input.ActionPress && Jumping && LandTimer = 0){
+		if(ShieldState = 0 && Input.ActionPress && Jumping){
 			BubbleShield.sprite_index = sprBubbleShieldBounce;
 			BubbleShield.image_speed = 0.5;
 			PlaySound(BubbleBounce);
@@ -40,7 +40,7 @@ function BubbleShieldPerform(){
 			CanLand = false;
 			CanJump = false;
 			CanRoll = false;
-			if(Ground && !Land){
+			if(Ground){
 				LandTimer = 4;
 				Ground = false;
 				Jumping = true;
@@ -55,7 +55,6 @@ function BubbleShieldPerform(){
 					YSpeed -= (7.5/2) * dcos(GroundAngle);
 				}
 				ShieldState = 0;
-				PlayerCollisionGround();
 			}
 		}
 		//Reset the flag when not jumping

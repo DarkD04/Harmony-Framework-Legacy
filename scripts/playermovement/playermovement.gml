@@ -44,6 +44,6 @@ function PlayerMovement(){
 	PlatformCheck = true;
 
 	//Disable collision
-	if(CheckTerrain(WallRadiusW + 2, -HitboxH-1) || CheckTerrain(-WallRadiusW - 2, -HitboxH-1) || YSpeed <= 0 && !Ground)
+	if(CheckTerrain(WallRadiusW, -HitboxH-1) || CheckTerrain(-WallRadiusW, -HitboxH-1) || YSpeed <= 0 && !Ground)
 		PlatformCheck = false;
 }

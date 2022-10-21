@@ -13,7 +13,7 @@
 		PlaySound(Rings);
 		instance_destroy(id);
 	}
-	
+
 	if(Shattered){
 		//Update speed
 		x += XSpeed;

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Monitor",
   "spriteId": {
     "name": "sprMonitor",
     "path": "sprites/sprMonitor/sprMonitor.yy",
@@ -25,14 +28,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [
-    {"varType":6,"value":"\"10 Rings\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"MonitorType","varType":6,"value":"\"10 Rings\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "\"10 Rings\"",
         "\"Invincibility\"",
         "\"SpeedShoes\"",
@@ -42,15 +45,11 @@
         "\"Fire Shield\"",
         "\"Magnet Shield\"",
         "\"Bubble Shield\"",
-      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"MonitorType","tags":[],"resourceType":"GMObjectProperty",},
+      ],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {
     "name": "Common",
     "path": "folders/Objects/Stage/Common.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Monitor",
-  "tags": [],
-  "resourceType": "GMObject",
 }
