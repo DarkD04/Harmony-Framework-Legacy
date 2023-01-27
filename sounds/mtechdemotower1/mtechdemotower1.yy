@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "mTechdemoTower1",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -11,14 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mtechdemotower1.ogg",
-  "duration": 96.0,
+  "soundFile": "mTechdemoTower1.mp3",
+  "duration": 96.02612,
   "parent": {
     "name": "Stage",
-    "path": "folders/Music/Stage.yy",
+    "path": "folders/Sounds/Music/Stage.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "mTechdemoTower1",
-  "tags": [],
-  "resourceType": "GMSound",
 }

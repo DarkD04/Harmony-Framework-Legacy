@@ -1,12 +1,12 @@
 function PlayerPerformRoll(){
-	if(!Roll && !Jumping && abs(GroundSpeed) > 1 && Input.Down && CanRoll && Ground && CanLand && State = ST_NONE)
+	if(State != ST_ROLL && State = ST_NONE && abs(GroundSpeed) > 1 && Input.Down && CanRoll && Ground && CanLand)
 	{
 		PlaySound(Rolling);
-		Roll = true;
+		State = ST_ROLL;
 	}
 		
 	//Roll controls
-	if(Roll && Ground)
+	if(State = ST_ROLL && Ground)
 	{
 		//Change animation
 		PlayerAnimation(ANIM_ROLL, floor(max(0, 4-abs(GroundSpeed))));
@@ -18,7 +18,7 @@ function PlayerPerformRoll(){
 		GroundSpeed = Approach(GroundSpeed, 0, Friction / 2);
 				
 		//Stop rolling
-		if(abs(GroundSpeed) < 0.5) Roll = false;
+		if(abs(GroundSpeed) < 0.5) State = ST_NONE;
 			
 		//Turning to different direction
 		if(GroundSpeed > 0 && Input.Left && !Input.Right) GroundSpeed -= 0.125;
@@ -26,6 +26,6 @@ function PlayerPerformRoll(){
 	}
 	
 	//Player is attacking
-	if(Roll) Attacking = true;
+	if(State = ST_ROLL) Attacking = true;
 	
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tileTestStage",
   "spriteId": {
     "name": "tex_teststagetile",
     "path": "sprites/tex_teststagetile/tex_teststagetile.yy",
@@ -1057,10 +1060,6 @@
   },
   "parent": {
     "name": "Texture",
-    "path": "folders/Scenes/Stages/Test Stage/Texture.yy",
+    "path": "folders/Rooms/Stages/Test Stage/Texture.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tileTestStage",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

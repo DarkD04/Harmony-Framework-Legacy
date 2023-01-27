@@ -3,7 +3,7 @@ function PlayerPeformJump(){
 	if(Ground && Jumping && CanLand) Jumping = false;
 		
 	//Make player jump
-	if(!Jumping && Input.ActionPress && Ground && State = ST_NONE || !Jumping && Input.ActionPress && Ground && State = ST_KNUXSLIDE)
+	if(!Jumping && Input.ActionPress && Ground && State = ST_NONE || !Jumping && Input.ActionPress && Ground && State = ST_ROLL || !Jumping && Input.ActionPress && Ground && State = ST_KNUXSLIDE)
 	{
 		PlayerAnimation(ANIM_ROLL, floor(max(0, 4-abs(GroundSpeed))));
 		PlaySound(Jump);

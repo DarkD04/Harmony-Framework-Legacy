@@ -2,7 +2,7 @@ function PlayerHitbox(){
 		//Change wall radius y
 	if(GroundAngle = 0 && Ground) WallRadiusH = 8 else WallRadiusH = 0;
 	
-	if(State != ST_JUMP && !Roll && State != ST_GLIDE)
+	if(Ground && State != ST_JUMP && State != ST_ROLL && State != ST_GLIDE)
 		Camera.RollingOffset = 0;
 		
 	//Radius changes
@@ -14,11 +14,11 @@ function PlayerHitbox(){
 
 			
 			//Change radius when in ball form
-			if(State = ST_JUMP || Roll)
+			if(State = ST_JUMP || State = ST_ROLL)
 			{
 				HitboxW = 7;
 				HitboxH = 14;
-				if(Roll) Camera.RollingOffset = 5;
+				if(State = ST_ROLL) Camera.RollingOffset = 5;
 			}
 		break;
 		
@@ -28,11 +28,11 @@ function PlayerHitbox(){
 			WallRadiusW = 10;
 			
 			//Change radius when in ball form
-			if(State = ST_JUMP || Roll)
+			if(State = ST_JUMP || State = ST_ROLL)
 			{
 				HitboxW = 7;
 				HitboxH = 14;
-				if(Roll) Camera.RollingOffset = 1;
+				if(State = ST_ROLL) Camera.RollingOffset = 1;
 			}
 		break;
 		case CHAR_KNUX:
@@ -41,11 +41,11 @@ function PlayerHitbox(){
 			WallRadiusW = 11;
 			
 			//Change radius when in ball form
-			if(State = ST_JUMP || Roll)
+			if(State = ST_JUMP || State = ST_ROLL)
 			{
 				HitboxW = 7;
 				HitboxH = 14;
-				if(Roll) Camera.RollingOffset = 5;
+				if(State = ST_ROLL) Camera.RollingOffset = 5;
 			}
 			
 			//Change hitbox when gliding and sliding

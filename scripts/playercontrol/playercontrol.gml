@@ -6,7 +6,7 @@ function PlayerControl(){
 	if(InputInterrupt) exit;
 	
 	//Ground movement
-	if(Ground && !Roll){
+	if(Ground && State != ST_ROLL){
 		//Slope influence
 		if(abs(GroundSpeed) >= 0.125 || ControlLock >= 1) GroundSpeed -= dsin(GroundAngle) * SlopeInfluence
 		

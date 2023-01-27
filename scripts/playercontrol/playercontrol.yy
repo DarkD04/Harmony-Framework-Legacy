@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "PlayerControl",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "Movement",
     "path": "folders/Scripts/Player Scripts/Movement.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "PlayerControl",
-  "tags": [],
-  "resourceType": "GMScript",
 }

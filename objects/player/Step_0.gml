@@ -1,11 +1,5 @@
 /// @description Execute scripts
-	
-	//Reset landing flag
-	Land = false;
-	CanLand = true;
-	WallStopper = true;
-	Attacking = false;
-	
+
 	//Change physics values
 	PlayerPhysicsSetup();
 	
@@ -25,7 +19,10 @@
 		
 		//Airborn wall collision
 		PlayerWallCollision();
-	
+		
+		//Handle how semi solids work
+		PlayerSemiSolid();
+		
 		//Player handle shields
 		PlayerShieldList();
 		
@@ -59,7 +56,7 @@
 	
 	//Player state lists
 	PlayerStateList();
-	
+
 	//Handle hurt
 	PlayerHandleHurt();
 	

@@ -5,17 +5,22 @@ function PlayerStateList(){
 	CanJump = true;
 	CanRoll = true;
 	CanMove = true;
+	Land = false;
+	CanLand = true;
+	WallStopper = true;
+	Attacking = false;
 	
 	if(Roll) State = ST_NONE;
 	
 	//Macros for states
 	#macro ST_NONE 0
 	#macro ST_JUMP 1
-	#macro ST_LOOKUP 2
-	#macro ST_LOOKDOWN 3
-	#macro ST_SPINDASH 4
-	#macro ST_HURT 5
-	#macro ST_SPRING 6
+	#macro ST_ROLL 2
+	#macro ST_LOOKUP 3
+	#macro ST_LOOKDOWN 4
+	#macro ST_SPINDASH 5
+	#macro ST_HURT 6
+	#macro ST_SPRING 7
 	#macro ST_PEELOUT 10
 	#macro ST_FLY 11
 	#macro ST_GLIDE 12

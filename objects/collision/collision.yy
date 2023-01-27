@@ -37,6 +37,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Parent",
-    "path": "folders/Scenes/Collision/Parent.yy",
+    "path": "folders/Rooms/Collision/Parent.yy",
   },
 }

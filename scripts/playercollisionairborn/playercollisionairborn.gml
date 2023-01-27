@@ -3,7 +3,7 @@ function PlayerCollisionAirborn(){
 	if(!Ground && CeilingSide = 0){
 		if(CheckTerrain(-HitboxW, HitboxH) && YSpeed >= 0 || CheckTerrain(HitboxW, HitboxH) && YSpeed >= 0){
 			if(CanLand) Jumping = false
-			Roll = false;
+			if(State = ST_ROLL) State = ST_NONE;
 			Ground = true;
 			Land = true;
 			LandTimer = 4;
@@ -35,6 +35,7 @@ function PlayerCollisionAirborn(){
 		GroundSpeed = -YSpeed * dsin(GroundAngle)*1.2;
 		
 		if(Ground) CeilingSide = 0;
+		State = ST_NONE;
 		Ground = true
 	}
 	

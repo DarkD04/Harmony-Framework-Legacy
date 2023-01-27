@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Texture",
-    "path": "folders/Scenes/Stages/Test Stage/Texture.yy",
+    "path": "folders/Rooms/Stages/Test Stage/Texture.yy",
   },
 }

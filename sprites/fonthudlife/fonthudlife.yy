@@ -87,6 +87,6 @@
   "nineSlice": null,
   "parent": {
     "name": "HUD",
-    "path": "folders/Objects/Stage/Common/Controllers/Sprites/HUD.yy",
+    "path": "folders/Sprites/Stage/HUD.yy",
   },
 }

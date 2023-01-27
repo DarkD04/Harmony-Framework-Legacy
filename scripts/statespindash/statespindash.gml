@@ -34,13 +34,13 @@ function StateSpindash(){
 		
 		//Release the spindash
 		if(!Input.Down){
+			State = ST_ROLL;
 			PlayerAnimation(ANIM_ROLL, 1);
 			audio_stop_sound(Spindash);
 			PlaySound(Release);
 			Camera.HorizontalLag = 20-SpindashRev;
 			GroundSpeed = (8+(floor(SpindashRev)/2))*Direction;
-			State = ST_NONE;
-			Roll = true;
+			
 		}
 	}
 }

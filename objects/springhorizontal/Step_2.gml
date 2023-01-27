@@ -6,12 +6,12 @@
 		case "Red": SpringPower = 16; sprite_index = sprRedSpringHorizontal; break;	
 	}
 	
+	//Wall stoppers
+	if(image_xscale < 0 && PlayerCheckObject(C_RIGHT, 16)) Player.WallStopper = false;
+	if(image_xscale > 0 && PlayerCheckObject(C_LEFT, 16)) Player.WallStopper = false;
+	
 	//Don't play the animation
 	if(!Triggered) image_index = 0;
-	
-	//Change WallStopper flag depending on the side
-	if(image_xscale > 0) WallStopper = sign(max(Player.GroundSpeed, 0));
-	if(image_xscale < 0) WallStopper = sign(max(-Player.GroundSpeed, 0));
 	
 	//Trigger the left side of the spring
 	if(PlayerCheckObject(C_LEFT) && !Triggered && image_xscale > 0){
@@ -44,7 +44,7 @@
 	}
 	
 	//Reset triggered flag when animation is over
-	if(image_index = 0) Triggered = false;
+	if(image_index > 0 && image_index < 1) Triggered = false;
 	
 	
 

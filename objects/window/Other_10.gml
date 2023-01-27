@@ -11,3 +11,6 @@
 	//Resize the port
 	view_set_wport(view_current, Game.ScreenWidth);
 	view_set_hport(view_current, Game.ScreenHeight);
+	
+	//Fullscreen
+	if(Game.ScreenSize >= 4) window_set_fullscreen(true); else window_set_fullscreen(false);

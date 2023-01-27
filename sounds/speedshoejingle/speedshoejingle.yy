@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SpeedShoeJingle",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -15,10 +18,6 @@
   "duration": 23.014786,
   "parent": {
     "name": "Jingle",
-    "path": "folders/Music/Jingle.yy",
+    "path": "folders/Sounds/Music/Jingle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SpeedShoeJingle",
-  "tags": [],
-  "resourceType": "GMSound",
 }

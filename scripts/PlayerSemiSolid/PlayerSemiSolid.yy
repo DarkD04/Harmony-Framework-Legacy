@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "PlayerCollisionAirborn",
+  "name": "PlayerSemiSolid",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Collision",
-    "path": "folders/Scripts/Player Scripts/Collision.yy",
+    "name": "Movement",
+    "path": "folders/Scripts/Player Scripts/Movement.yy",
   },
 }

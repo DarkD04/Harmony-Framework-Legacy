@@ -7,7 +7,7 @@
 	CollisionFlag = true;
 	
 	//Change collision flag
-	if(Player.Roll || Player.Jumping && Player.YSpeed >= 0 || Player.State = ST_GLIDE || Destroyed)
+	if(Player.State = ST_ROLL || Player.Jumping && Player.YSpeed >= 0 || Player.State = ST_GLIDE || Destroyed)
 		CollisionFlag = false;	
 		
 	//Destroy the monitor
